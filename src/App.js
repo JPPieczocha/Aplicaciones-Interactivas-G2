@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Botones from './components/Botones.js'
 
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
+      <Botones>
+      </Botones>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hola wacho
