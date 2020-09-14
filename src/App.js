@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import MenuPrincipal from './components/MenuPrincipal.js';
 import Desplegable from './components/Desplegable.js';
+import Slider from './components/Slider';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
       <header className="App-principal">
         <p>
           Test
+          <Slider>
+            
+          </Slider>
         </p>
         <a
           className="App-link"
