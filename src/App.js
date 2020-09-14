@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MenuPrincipal from './components/MenuPrincipal.js'
+import MenuPrincipal from './components/MenuPrincipal.js';
+import Desplegable from './components/Desplegable.js';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <header className="App-barraTitulo">
        <img src={logo} className="App-logo" alt="logo"/>
         Consultorio
+        <Desplegable></Desplegable>
       </header>
       <body className="App-header">
       <MenuPrincipal>
