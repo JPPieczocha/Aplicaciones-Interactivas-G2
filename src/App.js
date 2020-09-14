@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import MenuPrincipal from './components/MenuPrincipal.js';
 import Desplegable from './components/Desplegable.js';
+
 import Footer from "./components/Footer"
+import Slider from './components/Slider';
 
 function App() {
 
@@ -21,6 +23,9 @@ function App() {
       <div className="App-principal">
         <p>
           Test
+          <Slider>
+            
+          </Slider>
         </p>
         <a
           className="App-link"
