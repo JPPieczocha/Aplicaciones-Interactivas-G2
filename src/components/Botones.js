@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import {Button, Typography} from '@material-ui/core';
 import "./../assets/Botones.css"
 
 const useStyles = makeStyles((theme) => ({
@@ -16,8 +16,14 @@ export default function Botones() {
 
   return (
     <div className="boton">
-      <Button variant="contained" color="primary">
-        The Game
+      <Button> 
+        Home
+      </Button>
+      <Button>
+        ¿Cómo llego?
+      </Button>
+      <Button>
+        Sobre nosotros
       </Button>
     </div>
   );

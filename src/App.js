@@ -4,23 +4,28 @@ import './App.css';
 import Botones from './components/Botones.js'
 
 function App() {
+
   return (
     <div className="App">
-      
-      <header className="App-header">
+      <header className="App-barraTitulo">
+        Consultorio
+      </header>
+      <body className="App-header">
       <Botones>
       </Botones>
+      </body>
+      <header className="App-principal">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hola wacho
+          Test
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Get stick bug'd lol
+          Open for a surprise
         </a>
       </header>
     </div>
