@@ -1,5 +1,5 @@
 import React from "react";
-import "./../assets/Footer.css";
+import "./../App.css";
 
 //Iconos
 import CopyrightIcon from '@material-ui/icons/Copyright';
