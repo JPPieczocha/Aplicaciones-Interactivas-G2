@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import MenuPrincipal from './components/MenuPrincipal.js';
 import Desplegable from './components/Desplegable.js';
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       <MenuPrincipal>
       </MenuPrincipal>
       </body>
-      <header className="App-principal">
+      <div className="App-principal">
         <p>
           Test
         </p>
@@ -29,7 +30,8 @@ function App() {
         >
           Open for a surprise
         </a>
-      </header>
+      </div>
+      <Footer/>
     </div>
   );
 }
