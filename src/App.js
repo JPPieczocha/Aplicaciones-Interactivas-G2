@@ -1,21 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Botones from './components/Botones.js'
+import MenuPrincipal from './components/MenuPrincipal.js'
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
+       <img src={logo} className="App-logo" alt="logo"/>
         Consultorio
       </header>
       <body className="App-header">
-      <Botones>
-      </Botones>
+      <MenuPrincipal>
+      </MenuPrincipal>
       </body>
       <header className="App-principal">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Test
         </p>

@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -42,9 +42,8 @@
   background-color: #191942;
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: right;
+  align-items: center;
+  justify-content: left;
   font-size: calc(50px + 2vmin);
   font-style: oblique;
   color: #53a6f3;
