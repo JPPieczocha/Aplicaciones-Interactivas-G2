@@ -13,17 +13,17 @@ export default function Slider(){
             <Carousel>
                 <div>
                     <img src={img1}/>
-                    <h2>Sample Caption</h2>
+                    <h2>Meme 1</h2>
                 </div>
 
                 <div>
                     <img src={img2}/>
-                    <h2>Sample Caption</h2>
+                    <h2>Meme 2</h2>
                 </div>
 
                 <div>
                     <img src={img3}/>
-                    <h2>Sample Caption</h2>
+                    <h2>Meme 3</h2>
                 </div>
             </Carousel>
         </div>

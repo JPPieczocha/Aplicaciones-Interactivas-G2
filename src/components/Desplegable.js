@@ -7,7 +7,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 const StyledMenu = withStyles({
   paper: {
-    border: '1px solid #d3d4d5',
+    border: '4px solid #1F2742',
+    backgroundColor: '#1769AA',
   },
 })((props) => (
   <Menu
@@ -27,11 +28,12 @@ const StyledMenu = withStyles({
 
 const StyledMenuItem = withStyles((theme) => ({
   root: {
+    color: theme.palette.common.white,
+    backgroundColor: theme.palette.primary.dark,
     '&:focus': {
-      backgroundColor: theme.palette.primary,
+      backgroundColor: theme.palette.primary.dark,
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: theme.palette.common.black,
-        justifyItems: "center"
+        backgroundColor: theme.palette.primary.dark,
       },
     },
   },
@@ -57,7 +59,7 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        Open Menu
+        ^
       </Button>
       <StyledMenu
         id="customized-menu"
@@ -67,13 +69,13 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <ListItemText primary="Sent mail" align="center"/>
+          <ListItemText primary="Sent mail" align="center" justify="center"/>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemText primary="Drafts" align="center"/>
+          <ListItemText primary="Drafts" align="center" justify="center"/>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemText primary="Inbox" align="center"/>
+          <ListItemText primary="Inbox" align="center" justify="center"/>
         </StyledMenuItem>
       </StyledMenu>
     </div>

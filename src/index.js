@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <App />
+      <App />
     </ThemeProvider>
   </React.StrictMode>
   /* */,
