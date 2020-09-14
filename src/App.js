@@ -1,22 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MenuPrincipal from './components/MenuPrincipal.js';
-import Desplegable from './components/Desplegable.js';
+import AutoGrid from './components/Grid.js'
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
-       <img src={logo} className="App-logo" alt="logo"/>
-        Consultorio
-        <Desplegable></Desplegable>
+        <AutoGrid></AutoGrid>
       </header>
-      <body className="App-header">
+      <header className="App-header">
       <MenuPrincipal>
       </MenuPrincipal>
-      </body>
+      </header>
       <header className="App-principal">
         <p>
           Test
