@@ -1,6 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -44,10 +46,14 @@ export default function CustomizedMenus() {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    setOpen(!open);
   };
+
+  const [open, setOpen] = React.useState(true);
 
   const handleClose = () => {
     setAnchorEl(null);
+    setOpen(!open);
   };
 
   return (
@@ -59,7 +65,7 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        ^
+        {open != null ? open ? <ExpandLess /> : <ExpandMore /> : null}
       </Button>
       <StyledMenu
         id="customized-menu"

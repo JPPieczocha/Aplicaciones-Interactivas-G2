@@ -6,15 +6,12 @@ import NavBar from './components/NavBar.js'
 import AutoGrid from './components/Grid.js'
 import Footer from "./components/Footer"
 import Slider from './components/Slider'
-import Desplegable from './components/Desplegable'
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        {//<Desplegable />
-        }
         <AutoGrid/>
       </header>
       <div className="App-header">
