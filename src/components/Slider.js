@@ -10,7 +10,7 @@ import img3 from '.././assets/img/img3.jpg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 400,
+      maxWidth: 400, 
       flexGrow: 0,
     },
     header: {
