@@ -5,12 +5,11 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 const StyledMenu = withStyles({
   paper: {
-    border: '4px solid #1F2742',
-    backgroundColor: '#1769AA',
+    border: '4px solid #1F3354',
+    backgroundColor: '#1F3354',
   },
 })((props) => (
   <Menu
@@ -18,7 +17,7 @@ const StyledMenu = withStyles({
     getContentAnchorEl={null}
     anchorOrigin={{
       vertical: 'bottom',
-      horizontal: 'center',
+      horizontal: 'left',
     }}
     transformOrigin={{
       vertical: 'top',
@@ -30,14 +29,9 @@ const StyledMenu = withStyles({
 
 const StyledMenuItem = withStyles((theme) => ({
   root: {
-    color: theme.palette.common.white,
-    backgroundColor: theme.palette.primary.dark,
-    '&:focus': {
-      backgroundColor: theme.palette.primary.dark,
-      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        backgroundColor: theme.palette.primary.dark,
-      },
-    },
+    color: '#A2B2E9',
+    borderTop: '4px solid #1F3354',
+    backgroundImage: 'linear-gradient(0deg, #42639D, #6982AE)',
   },
 }))(MenuItem);
 
@@ -62,7 +56,7 @@ export default function CustomizedMenus() {
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
-        color="primary"
+        color="secondary"
         onClick={handleClick}
       >
         {open != null ? open ? <ExpandLess /> : <ExpandMore /> : null}
@@ -75,13 +69,25 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <ListItemText primary="Sent mail" align="center" justify="center"/>
+          <Button className="boton" color="secondary">Gestión de turnos</Button>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemText primary="Drafts" align="center" justify="center"/>
+          <Button className="boton" color="secondary">Gestión de recetas</Button>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemText primary="Inbox" align="center" justify="center"/>
+          <Button className="boton" color="secondary">Ingresar novedades</Button>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <Button className="boton" color="secondary">Modificar historial clínico</Button>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <Button className="boton" color="secondary">Consultar historial clínico</Button>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <Button className="boton" color="secondary">Configuración</Button>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <Button className="boton" color="secondary">Cerrar sesión</Button>
         </StyledMenuItem>
       </StyledMenu>
     </div>
