@@ -18,7 +18,7 @@ export default function MenuPrincipal() {
         <NavBar align="center"/>
       </div>
       <div className="App-principal">
-        <p>Test</p>
+        <hr/>
         <Slider />
       </div>
       <Footer/>

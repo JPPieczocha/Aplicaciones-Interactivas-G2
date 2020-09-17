@@ -9,12 +9,12 @@ export default function NavBar() {
     <div>
      <ButtonGroup variant="text" aria-label="text primary button group">
         <Link to={'/'}>
-          <Button className="boton" color="primary" align="center"> Home </Button>
+          <Button className="boton" color="primary"> Home </Button>
         </Link>
         <Link to={'/Direccion'}>
-          <Button className="boton" color="primary" align="center"> ¿Cómo llego? </Button>
+          <Button className="boton" color="primary"> ¿Cómo llego? </Button>
         </Link>
-         <Button className="boton" color="primary" align="center"> Sobre nosotros </Button>
+         <Button className="boton" color="primary"> Sobre nosotros </Button>
      </ButtonGroup>
     </div>
   );

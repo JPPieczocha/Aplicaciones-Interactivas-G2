@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #e2d3ff;
 }
@@ -40,6 +39,7 @@
   background-image: linear-gradient(90deg, #f4ffff, #4B67A4);
   min-height: 10vh;
   display: flex;
+  float:center;
   align-items: center;
   justify-content: left;
   font-size: calc(45px + 2vmin);
@@ -64,10 +64,10 @@
 
 /* -- NAVBAR -- */
 .boton{
-float:left;
-justify-items: center;
+float:center;
 color: #525194;
 text-shadow: 3px 3px 7px #464646;
+font-weight: 0;
 }
 
 .inicio{float:right;}
