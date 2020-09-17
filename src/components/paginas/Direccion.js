@@ -1,0 +1,43 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './../../App.css';
+import {withScriptjs, withGoogleMap} from 'react-google-maps';
+
+//Componentes
+import NavBar from './../NavBar.js'
+import AutoGrid from './../Grid.js'
+import Footer from "./../Footer"
+import Mapa from './../Mapa'
+import Slider from './../Slider'
+import { render } from '@testing-library/react';
+//import Desplegable from './../Desplegable' 
+
+//const mapURL= 'googleMapURL= "https://maps.googleapis.com/maps/api/js?key=${CredencialMapa.mapsKey}'
+const WrappedMap = withScriptjs(withGoogleMap(Mapa));
+
+
+export default function Direccion() {
+  return (
+    <div className="App">
+      <header className="App-barraTitulo">
+        {//<Desplegable />
+        }
+        <AutoGrid/>
+      </header>
+      <div className="App-header">
+        <NavBar/>
+      </div>
+      <div className="App-principal">
+        <div style={{width: '90vw', height: "60vh"}}>
+            <WrappedMap
+                googleMapURL = {'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}
+                loadingElement={<div style={{ height: "100%"}} />}
+                containerElement={<div style={{ height: "100%"}} />}
+                mapElement={<div style={{ height: "100%"}} />}
+            />
+        </div>
+      </div>
+      <Footer/>
+    </div>
+  );
+}
