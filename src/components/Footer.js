@@ -1,5 +1,6 @@
 import React from "react";
 import "./../App.css";
+import {Button, ButtonGroup} from '@material-ui/core';
 
 //Iconos
 import CopyrightIcon from '@material-ui/icons/Copyright';
@@ -13,30 +14,34 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 function Footer() {
   return (
     <div className="main-footer">
-        <div className="container">
-            <div className="row">
-                <div className="col">
+        <div className="container" align="center">
+                <ButtonGroup align="center">
+                <Button color="primary">
                     <FacebookIcon />
-                </div>
-                <div className="col">
+                </Button>
+                <Button color="primary">
                     <TwitterIcon />
-                </div>
-                <div className="col">
+                </Button>
+                <Button color="primary">
                     <InstagramIcon />
-                </div>
-                <div className="col">
+                </Button>
+                <Button color="primary">
                     <YouTubeIcon />
-                </div>
-                <div className="col">
+                </Button>
+                <Button color="primary">
                     <LinkedInIcon />
-                </div>
-                <div className="col">
+                    </Button>
+                <Button color="primary">
                     <WhatsAppIcon />
-                </div>
-            </div>
+                </Button>
+                </ButtonGroup>
             <hr />
             <div className="row">
-            <p className="col-sm"><CopyrightIcon/> {new Date().getFullYear()} Todos los derechos reservados <br/>Términos de servicio <br/>FAQ
+            <p className="col-sm"><CopyrightIcon/> {new Date().getFullYear()} Todos los derechos reservados <br/><a
+          className="App-link"
+          href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
+          target="_blank"
+          rel="noopener noreferrer">FAQ</a> <br/>Términos de servicio
             </p>
             </div>
          </div>

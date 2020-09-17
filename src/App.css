@@ -3,7 +3,6 @@
 }
 
 .App-logo {
-  float: center;
   height: 12vmin;
   pointer-events: none;
 }
@@ -15,22 +14,20 @@
 }
 
 .App-header {
-  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #E6EDF1, #F7FAFB);
   min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
+  justify-items: center;
   font-size: calc(10px + 2vmin);
   color: #e2d3ff;
-  border-width: medium;
-  border-style: solid;
-  border-color:  #858585;
+  border-top: medium solid #6A7C95;
+  border-bottom: medium solid #6A7C95;
 }
 
 .App-principal {
-  background-color: #42B2f2;
-  min-height: 100vh;
+  background-image: linear-gradient(0deg, #769Cf3, #B6E0F8);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +37,7 @@
 }
 
 .App-barraTitulo {
-  background-color: #191942;
+  background-image: linear-gradient(90deg, #f4ffff, #4B67A4);
   min-height: 10vh;
   display: flex;
   align-items: center;
@@ -48,11 +45,12 @@
   font-size: calc(45px + 2vmin);
   font-style: oblique;
   font-family: Verdana;
-  color: #53a6f3;
+  color: #121C3F;
+  text-shadow: 3px 3px 6px black;
 }
 
 .App-link {
-  color: #000000;
+  color: #525194;
 }
 
 @keyframes App-logo-spin {
@@ -65,13 +63,18 @@
 }
 
 /* -- NAVBAR -- */
-.boton{float:left;}
+.boton{
+float:left;
+justify-items: center;
+color: #525194;
+text-shadow: 3px 3px 7px #464646;
+}
 
 .inicio{float:right;}
 
 /*  -- FOOTER --  */
 .main-footer {
-  color: #858585;
+  color: #525194;
   background-color: #191942;
   padding-top: 3em;
   position: relative;

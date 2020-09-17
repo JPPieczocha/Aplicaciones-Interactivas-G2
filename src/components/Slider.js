@@ -9,40 +9,33 @@ import img3 from './../assets/img/img3.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 400, 
+      maxWidth: 650,
+      minHeight: '2hv',
       flexGrow: 0,
+      boxShadow: '0px 2px 10px black',
     },
-    header: {
-      alignItems: 'center',
-      height: 50,
-      paddingLeft: theme.spacing(4),
-      backgroundColor: theme.palette.background.default,
-    },
-    img: {
-      height: 205,
-      display: 'block',
-      maxWidth: 400,
-      overflow: 'hidden',
-      width: '100%',
-    },
+    leyenda:{
+      color: '#FFFFFF',
+      backgroundColor: 'none',
+    }
   }));
 
 export default function Slider(){
     const classes = useStyles();
     return (
-        <div className={classes.root}>
-            <Carousel>
+        <div >
+            <Carousel className={classes.root}>
                 <div>
                     <img src={img1} alt=""/>
-                    <h2 justify="center">Meme 1</h2>
+                    <h5 className={classes.leyenda}>Nuevo equipo para cuidarte mejor</h5>
                 </div>
                 <div>
                     <img src={img2} alt=""/>
-                    <h2 justify="center">Meme 2</h2>
+                    <h5 className={classes.leyenda}>Resultados de análisis que podrian dar indicios de una posible cura</h5>
                 </div>
                 <div>
                     <img src={img3} alt=""/>
-                    <h2 justify="center">Meme 3</h2>
+                    <h5 className={classes.leyenda}>Como cuidarte y consejos de prevención</h5>
                 </div>
             </Carousel>
         </div>

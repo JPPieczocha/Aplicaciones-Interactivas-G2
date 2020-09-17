@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     alignItems: "center",
-    justifyItems: "center"
   },
   paper: {
     padding: theme.spacing(0),

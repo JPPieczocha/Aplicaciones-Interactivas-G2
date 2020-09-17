@@ -15,16 +15,11 @@ export default function MenuPrincipal() {
         <AutoGrid/>
       </header>
       <div className="App-header">
-        <NavBar/>
+        <NavBar align="center"/>
       </div>
       <div className="App-principal">
         <p>Test</p>
         <Slider />
-        <a
-          className="App-link"
-          href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
-          target="_blank"
-          rel="noopener noreferrer">Open for a surprise</a>
       </div>
       <Footer/>
     </div>
