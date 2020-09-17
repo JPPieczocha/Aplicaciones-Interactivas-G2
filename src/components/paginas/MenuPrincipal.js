@@ -6,15 +6,12 @@ import NavBar from './../NavBar.js'
 import AutoGrid from './../Grid.js'
 import Footer from "./../Footer"
 import Slider from './../Slider'
-//import Desplegable from './../Desplegable' 
 
-export default function MenuPrincial() {
+export default function MenuPrincipal() {
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        {//<Desplegable />
-        }
         <AutoGrid/>
       </header>
       <div className="App-header">

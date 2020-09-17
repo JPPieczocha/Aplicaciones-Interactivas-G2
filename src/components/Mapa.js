@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {GoogleMap, Marker} from 'react-google-maps';
 //import CredencialMapa from './../CredencialMapa';
 
