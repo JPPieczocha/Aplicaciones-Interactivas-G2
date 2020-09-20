@@ -26,7 +26,8 @@ export default function AutoGrid() {
         Consultorio
         </Grid>
         <Grid item xs align='right'>
-         <Desplegable/>
+         <InicioRegistro/>
+         {/*<Desplegable/>*/}
         </Grid>
       </Grid>
     </div>

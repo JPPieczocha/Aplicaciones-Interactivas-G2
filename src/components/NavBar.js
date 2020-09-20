@@ -14,7 +14,9 @@ export default function NavBar() {
         <Link to={'/Direccion'}>
           <Button className="boton" color="primary"> ¿Cómo llego? </Button>
         </Link>
+        <Link to={'/'}>
          <Button className="boton" color="primary"> Sobre nosotros </Button>
+        </Link>
      </ButtonGroup>
     </div>
   );
