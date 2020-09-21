@@ -37,11 +37,24 @@ function Footer() {
                 </ButtonGroup>
             <hr />
             <div className="row">
-            <p className="col-sm"><CopyrightIcon/> {new Date().getFullYear()} Todos los derechos reservados <br/><a
-          className="App-link"
-          href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
-          target="_blank"
-          rel="noopener noreferrer">FAQ</a> <br/>Términos de servicio
+            <p className="col-sm">
+                <CopyrightIcon/> {new Date().getFullYear()} Todos los derechos reservados
+                <br/>
+                <a
+                className="App-link"
+                href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
+                target="_blank"
+                rel="noopener noreferrer">
+                    FAQ
+                </a>
+                <br/>
+                <a 
+                className="App-link"
+                href='https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan'
+                target="_blank"
+                rel="noopener noreferrer">
+                    Terminos de servicio
+                </a>
             </p>
             </div>
          </div>

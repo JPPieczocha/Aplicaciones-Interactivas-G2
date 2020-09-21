@@ -81,3 +81,13 @@ font-weight: 0;
   bottom: 0;
   width: 100%;
 }
+
+/* --LOGIN y REGISTER--*/
+.loginRegister {
+  background-image: linear-gradient(0deg, #769Cf3, #B6E0F8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}

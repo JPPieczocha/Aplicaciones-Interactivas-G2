@@ -8,8 +8,8 @@ export default function InicioRegistro() {
   return (
     <div className="inicio">
      <ButtonGroup variant="text" aria-label="text primary button group" color="primary">
-        <Link to={'/Login'}><Button> Iniciar Sesión </Button></Link>
-        <Link to={'/Login'}><Button> Registrarse </Button></Link>
+        <Link to={'/login'}><Button> Iniciar Sesión </Button></Link>
+        <Link to={'/register'}><Button> Registrarse </Button></Link>
      </ButtonGroup>
     </div>
   );
