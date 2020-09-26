@@ -22,14 +22,18 @@ export default function Direccion() {
         <NavBar/>
       </div>
       <div className="App-principal">
+        <br/>
+        <h2>Dirección: <span>Avenida Siempreviva 742, Springfield, Oregon, USA</span></h2>
+        <br/>
         <div style={{width: '90vw', height: "60vh"}}>
-            <WrappedMap
-                googleMapURL = {'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}
-                loadingElement={<div style={{ height: "100%"}} />}
-                containerElement={<div style={{ height: "100%"}} />}
-                mapElement={<div style={{ height: "100%"}} />}
-            />
+          <WrappedMap
+              googleMapURL = {'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}
+              loadingElement={<div style={{ height: "100%"}} />}
+              containerElement={<div style={{ height: "100%"}} />}
+              mapElement={<div style={{ height: "100%"}} />}
+          />
         </div>
+        <br/>
       </div>
       <Footer/>
     </div>

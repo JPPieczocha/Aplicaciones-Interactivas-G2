@@ -87,7 +87,7 @@ export default function MenuPrincipal() {
                   required
                 />
               </div>
-              <Link to={'/'}><button type="submit" className="btn btn-primary">Registrarse</button></Link>
+              <Link to={'/'}><button type="submit" className="btn btn-primary" >Registrarse</button></Link>
             </form>
         </div>
         <hr/>
