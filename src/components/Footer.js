@@ -16,22 +16,22 @@ function Footer() {
     <div className="main-footer">
         <div className="container" align="center">
                 <ButtonGroup align="center">
-                <Button color="primary">
+                <Button  href="https://www.facebook.com" color="primary">
                     <FacebookIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.twitter.com" color="primary">
                     <TwitterIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.instagram.com" color="primary">
                     <InstagramIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.youtube.com" color="primary">
                     <YouTubeIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.linkedin.com" color="primary">
                     <LinkedInIcon />
                     </Button>
-                <Button color="primary">
+                <Button href="https://www.whatsapp.com" color="primary">
                     <WhatsAppIcon />
                 </Button>
                 </ButtonGroup>
