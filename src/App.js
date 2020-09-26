@@ -5,6 +5,7 @@ import MenuPrincipal from './components/paginas/MenuPrincipal';
 import Direccion from './components/paginas/Direccion';
 import Login from './components/paginas/Login'
 import Register from './components/paginas/Register'
+import IngresarNovedades from './components/paginas/IngresarNovedades'
 
 //Comentario
 
@@ -18,6 +19,7 @@ class App extends React.Component{
             <Route path='/direccion' component={Direccion} />
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
+            <Route path='/cargarNovedades' component={IngresarNovedades} />
           </Switch>
         </div>
       </Router>
