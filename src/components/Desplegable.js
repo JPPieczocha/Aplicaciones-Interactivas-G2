@@ -79,7 +79,7 @@ export default function CustomizedMenus() {
           <Link to='/cargarNovedades'><Button className="boton" color="secondary">Ingresar novedades</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary">Modificar historial clínico</Button>
+          <Link to='/actualizarHistorial'><Button className="boton" color="secondary">Modificar historial clínico</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
           <Button className="boton" color="secondary">Consultar historial clínico</Button>

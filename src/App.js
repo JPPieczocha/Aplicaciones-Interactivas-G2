@@ -6,6 +6,7 @@ import Direccion from './components/paginas/Direccion';
 import Login from './components/paginas/Login'
 import Register from './components/paginas/Register'
 import IngresarNovedades from './components/paginas/IngresarNovedades'
+import ActualizarHistorial from './components/paginas/ActualizarHistorial'
 
 //Comentario
 
@@ -20,6 +21,7 @@ class App extends React.Component{
             <Route path='/login' component={Login} />
             <Route path='/register' component={Register} />
             <Route path='/cargarNovedades' component={IngresarNovedades} />
+            <Route path='/actualizarHistorial' component={ActualizarHistorial} />
           </Switch>
         </div>
       </Router>
