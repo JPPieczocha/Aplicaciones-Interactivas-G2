@@ -85,7 +85,7 @@ export default function CustomizedMenus() {
         <Link to='/consultarHistorial'><Button className="boton" color="secondary">Consultar historial clínico</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary">Configuración</Button>
+        <Link to='/configuracion'><Button className="boton" color="secondary">Configuración</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
           <Button className="boton" color="secondary">Cerrar sesión</Button>
