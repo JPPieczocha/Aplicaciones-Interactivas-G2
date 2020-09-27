@@ -2,19 +2,6 @@
   height: unset;
 }
 
-.App-logo {
-  height: 90px;
-  padding: 0px;
-  margin-left: -15px;
-  margin-top: 0px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 5s linear;
-  }
-}
-
 .App-header {
   background-image: linear-gradient(0deg, #E6EDF1, #F7FAFB);
   display: flex;
@@ -55,6 +42,7 @@
   text-shadow: 3px 3px 6px black;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .Tarjeta{
@@ -67,15 +55,6 @@
 
 .App-link {
   color: #525194;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .titulos{
@@ -114,13 +93,6 @@ margin: auto;
 float: center;
 }
 
-.menuDesplegable{
-padding: 0px;
-margin-right: 10px;
-}
-
-.inicio{float:right;}
-
 /*  -- FOOTER --  */
 .main-footer {
   color: #525194;
@@ -141,17 +113,6 @@ margin-right: 10px;
 }
 
 /* --CONFIGURACION--*/
-
-.Configuracion input{
-  width: 500px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #000;
-  outline: none;
-  height: 40px;
-  color: #000;
-  font-size: 16px;
-}
 
 .botonConfig {
   margin-top: 10px;
