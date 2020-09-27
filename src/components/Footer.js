@@ -16,32 +16,45 @@ function Footer() {
     <div className="main-footer">
         <div className="container" align="center">
                 <ButtonGroup align="center">
-                <Button color="primary">
+                <Button  href="https://www.facebook.com" color="primary">
                     <FacebookIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.twitter.com" color="primary">
                     <TwitterIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.instagram.com" color="primary">
                     <InstagramIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.youtube.com" color="primary">
                     <YouTubeIcon />
                 </Button>
-                <Button color="primary">
+                <Button href="https://www.linkedin.com" color="primary">
                     <LinkedInIcon />
                     </Button>
-                <Button color="primary">
+                <Button href="https://www.whatsapp.com" color="primary">
                     <WhatsAppIcon />
                 </Button>
                 </ButtonGroup>
             <hr />
             <div className="row">
-            <p className="col-sm"><CopyrightIcon/> {new Date().getFullYear()} Todos los derechos reservados <br/><a
-          className="App-link"
-          href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
-          target="_blank"
-          rel="noopener noreferrer">FAQ</a> <br/>Términos de servicio
+            <p className="col-sm">
+                <CopyrightIcon/> {new Date().getFullYear()} Todos los derechos reservados
+                <br/>
+                <a
+                className="App-link"
+                href="https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan"
+                target="_blank"
+                rel="noopener noreferrer">
+                    FAQ
+                </a>
+                <br/>
+                <a 
+                className="App-link"
+                href='https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan'
+                target="_blank"
+                rel="noopener noreferrer">
+                    Terminos de servicio
+                </a>
             </p>
             </div>
          </div>

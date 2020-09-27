@@ -26,6 +26,7 @@ export default function AutoGrid() {
         Consultorio
         </Grid>
         <Grid item xs align='right'>
+         <InicioRegistro/>
          <Desplegable/>
         </Grid>
       </Grid>
