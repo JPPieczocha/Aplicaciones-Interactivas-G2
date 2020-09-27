@@ -11,10 +11,12 @@ export default function NavBar() {
         <Link to={'/'}>
           <Button className="boton" color="primary"> Home </Button>
         </Link>
-        <Link to={'/Direccion'}>
+        <Link to={'/direccion'}>
           <Button className="boton" color="primary"> ¿Cómo llego? </Button>
         </Link>
-         <Button className="boton" color="primary"> Sobre nosotros </Button>
+        <Link to={'/about-us'}>
+          <Button className="boton" color="primary"> Sobre nosotros </Button>
+        </Link>
      </ButtonGroup>
     </div>
   );
