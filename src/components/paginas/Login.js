@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import './../../App.css';
 
 //Componentes
-import AutoGrid from './../Grid.js'
+import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 import NavBar from './../NavBar'
 

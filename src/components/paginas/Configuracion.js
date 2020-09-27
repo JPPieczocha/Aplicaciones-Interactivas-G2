@@ -3,7 +3,7 @@ import './../../App.css';
 import { Link } from 'react-router-dom'
 
 //Componentes
-import AutoGrid from './../Grid.js'
+import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 import NavBar from './../NavBar'
 
@@ -17,69 +17,65 @@ export default function MenuPrincipal() {
         <div className="App-header">
           <NavBar align="center"/>
         </div>
-        <div className='Configuracion'>
-          <h2>Configuraciones</h2>
-          <div className="row">
+        <div className='App-principal-variante'>
+        <h1 className="titulos">Configuraciones</h1>
+          <div style={{width:"500px", alignItems: "left"}}>
               <form autoComplete="off">
-                <div className="form-group">
-                  <h6>Email:</h6>
+                  <h6 className="campos" style={{margin:"20px"}}>Email:</h6>
                   <input
                     type="email"
                     className="form-control"
+                    style={{margin:"20px"}}
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Ingresar Email"
                     required
                   />
-                </div>
-                <div className="form-group">
-                  <h6>Telefono:</h6>
+                  <h6 className="campos" style={{margin:"20px"}}>Telefono:</h6>
                     <input
                       type="text"
                       autoComplete="new-password"
                       className="form-control"
+                      style={{margin:"20px"}}
                       id="exampleInputPassword1"
                       placeholder="Ingresar Telefono"
                       required
                     />
-                </div>
-                <div className="form-group">
-                  <h6>Numero de Socio:</h6>
+                  <h6 className="campos" style={{margin:"20px"}}>Numero de Socio:</h6>
                     <input
                       type="text"
                       autoComplete="new-password"
                       className="form-control"
+                      style={{margin:"20px"}}
                       id="exampleInputPassword1"
                       placeholder="Ingresar Numero de Socio"
                       required
                     />
-                </div>
-                <div className="form-group">
-                  <h6>Nueva Contraseña:</h6>
+                  <h6 className="campos" style={{margin:"20px"}}>Nueva Contraseña:</h6>
                     <input
                       type="password"
                       autoComplete="new-password"
                       className="form-control"
+                      style={{margin:"20px"}}
                       id="exampleInputPassword1"
                       placeholder="Ingresar Contrasena"
                       required
                     />
-                </div>
-                <div className="form-group">
-                  <h6>Confirmar Nueva Contraseña:</h6>
+                  <h6 className="campos" style={{margin:"20px"}}>Confirmar Nueva Contraseña:</h6>
                     <input
                       type="password"
                       autoComplete="new-password"
                       className="form-control"
+                      style={{margin:"20px"}}
                       id="exampleInputPassword1"
                       placeholder="Reingresar Contrasena"
                       required
-                    />
-                </div>
+                      />
+                    
               </form>
             </div>
             <Link to={'/'}>
-              <button type="submit" className="btn btn-primary botonConfig">Salvar Cambios</button>
+              <button type="submit" className="btn btn-primary botonConfig" style={{margin:"20px"}}>Guardar Cambios</button>
             </Link>
           </div>
           <Footer/>
@@ -88,7 +84,7 @@ export default function MenuPrincipal() {
   }
 
 
-        {/* <div className="loginbox">
+        /* <div className="loginbox">
           <h2>Login</h2>
           <form autoComplete="off">
             <p>Correo</p>
@@ -99,4 +95,4 @@ export default function MenuPrincipal() {
             <a href="#">¿Olvidaste tu contraseña?</a>
             <a href="#">¿No tiene cuenta?</a>
           </form>
-        </div> */}
+        </div> */

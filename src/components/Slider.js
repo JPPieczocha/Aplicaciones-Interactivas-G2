@@ -31,11 +31,11 @@ export default function Slider(){
                 </div>
                 <div>
                     <img src={img2} alt=""/>
-                    <h5 className={classes.leyenda}>Resultados de análisis que podrian dar indicios de una posible cura</h5>
+                    <h5 className={classes.leyenda}>Coronavirus: Indicios de una posible cura</h5>
                 </div>
                 <div>
                     <img src={img3} alt=""/>
-                    <h5 className={classes.leyenda}>Como cuidarte y consejos de prevención</h5>
+                    <h5 className={classes.leyenda}>Mitos y verdades sobre como cuidarte</h5>
                 </div>
             </Carousel>
         </div>

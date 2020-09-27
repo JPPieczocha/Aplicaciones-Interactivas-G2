@@ -1,7 +1,5 @@
 import React from 'react';
 import {GoogleMap, Marker} from 'react-google-maps';
-//import CredencialMapa from './../CredencialMapa';
-
 
 export default function Mapa(){
     return (

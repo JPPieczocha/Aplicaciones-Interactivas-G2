@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import NavBar from './../NavBar.js'
-import AutoGrid from './../Grid.js'
+import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 
 export default class IngresarNovedades extends Component {
@@ -14,12 +14,12 @@ export default class IngresarNovedades extends Component {
                 <navbar className="App-header">
                     <NavBar align="center"/>
                 </navbar>
-                <main className="App-principal">
-                            
+                <main className="App-principal-variante">
+                    <h1 className="titulos">Ingresar Novedades</h1>
                     <div fixed>
                         <form autoComplete="off">
                         <div>
-                            <h7>Título:</h7>
+                            <h7 className="campos">Título:</h7>
                             <input
                             type="text"
                             className="form-control"
@@ -31,7 +31,7 @@ export default class IngresarNovedades extends Component {
                         </div>
                         <br/>
                         <div>
-                            <h7>Novedad:</h7>
+                            <h7 className="campos">Novedad:</h7>
                             <br/>
                             <textarea rows="10" cols="100">
                                 
@@ -39,7 +39,7 @@ export default class IngresarNovedades extends Component {
                         </div>
                         <br/>
                         <div>
-                            <h7>Imagen:</h7>
+                            <h7 className="campos">Imagen:</h7>
                             <input
                             type="file"
                             autoComplete="new-password"

@@ -9,7 +9,9 @@ import Configuracion from './components/paginas/Configuracion'
 import IngresarNovedades from './components/paginas/IngresarNovedades'
 import ActualizarHistorial from './components/paginas/ActualizarHistorial'
 import ConsultarHistorial from './components/paginas/ConsultarHistorial'
-
+import SobreNosotros from './components/paginas/SobreNosotros.js';
+import GestionRecetas from './components/paginas/GestionRecetas.js'
+import GestionTurnos from './components/paginas/GestionTurnos.js'
 
 class App extends React.Component{
 
@@ -39,6 +41,9 @@ class App extends React.Component{
             <Route path='/actualizarHistorial' component={ActualizarHistorial} />
             <Route path='/consultarHistorial' component={ConsultarHistorial} />
             <Route path='/configuracion' component={Configuracion} />
+            <Route path='/about-us' component={SobreNosotros} />
+            <Route path='/recetas' component={GestionRecetas}/>
+            <Route path='/turnos' component={GestionTurnos}/>
           </Switch>
         </div>
       </Router>

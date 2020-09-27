@@ -5,7 +5,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const StyledMenu = withStyles({
   paper: {
@@ -52,7 +52,7 @@ export default function CustomizedMenus() {
   };
 
   return (
-    <div>
+    <div className="menuDesplegable">
       <Button
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -70,10 +70,14 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <StyledMenuItem>
+        <Link to={'/turnos'}>
           <Button className="boton" color="secondary">Gestión de turnos</Button>
+          </Link>
         </StyledMenuItem>
         <StyledMenuItem>
+        <Link to={'/recetas'}>
           <Button className="boton" color="secondary">Gestión de recetas</Button>
+          </Link>
         </StyledMenuItem>
         <StyledMenuItem>
           <Link to='/cargarNovedades'><Button className="boton" color="secondary">Ingresar novedades</Button></Link>

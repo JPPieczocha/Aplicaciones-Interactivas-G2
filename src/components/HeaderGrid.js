@@ -7,26 +7,26 @@ import logo from './../logo.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    alignItems: "center",
+    flexGrow: 0,
+    padding: 0,
+    display:"flex",
+    flexDirection: "row",
   },
-  paper: {
-    padding: theme.spacing(0),
-    color: theme.palette.text.secondary,
-  },
+  size:{
+    maxWidth: "100px",
+  }
 }));
-export default function AutoGrid() {
+export default function HeaderGrid() {
   const classes = useStyles();
 //InicioRegistro o bien Desplegable//
   return (
     <div className={classes.root}>
-      <Grid container spacing={1}>
+      <Grid container className={classes.root}>
         <Grid item xs>
-         <img src={logo} className="App-logo" alt="logo" justify= "center" align= "left"/>
+        <img src={logo} className="App-logo" alt="logo" align= "left"/>
         Consultorio
         </Grid>
-        <Grid item xs align='right'>
-         <InicioRegistro/>
+        <Grid item xs className={classes.size} align='right'>
          <Desplegable/>
         </Grid>
       </Grid>

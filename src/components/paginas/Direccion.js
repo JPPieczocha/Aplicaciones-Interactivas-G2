@@ -4,7 +4,7 @@ import {withScriptjs, withGoogleMap} from 'react-google-maps';
 
 //Componentes
 import NavBar from './../NavBar.js'
-import AutoGrid from './../Grid.js'
+import HeaderGrid from '../HeaderGrid.js'
 import Footer from "./../Footer"
 import Mapa from './../Mapa'
 
@@ -16,16 +16,16 @@ export default function Direccion() {
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <AutoGrid/>
+        <HeaderGrid/>
       </header>
       <div className="App-header">
         <NavBar/>
       </div>
-      <div className="App-principal">
+      <div className="App-principal-variante">
         <br/>
-        <h2>Dirección: <span>Avenida Siempreviva 742, Springfield, Oregon, USA</span></h2>
+        <h3 align="center" className="titulos">Dirección: <span>Avenida Siempreviva 742, Springfield, Oregon, USA</span></h3>
         <br/>
-        <div style={{width: '90vw', height: "60vh"}}>
+        <div style={{height: "60vh"}}>
           <WrappedMap
               googleMapURL = {'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}
               loadingElement={<div style={{ height: "100%"}} />}
