@@ -5,6 +5,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { Link } from 'react-router-dom'
 
 const StyledMenu = withStyles({
   paper: {
@@ -75,13 +76,13 @@ export default function CustomizedMenus() {
           <Button className="boton" color="secondary">Gestión de recetas</Button>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary">Ingresar novedades</Button>
+          <Link to='/cargarNovedades'><Button className="boton" color="secondary">Ingresar novedades</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary">Modificar historial clínico</Button>
+          <Link to='/actualizarHistorial'><Button className="boton" color="secondary">Modificar historial clínico</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary">Consultar historial clínico</Button>
+        <Link to='/consultarHistorial'><Button className="boton" color="secondary">Consultar historial clínico</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
           <Button className="boton" color="secondary">Configuración</Button>
