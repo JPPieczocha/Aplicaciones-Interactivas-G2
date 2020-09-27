@@ -20,64 +20,21 @@ import { withStyles } from '@material-ui/core/styles';
 const appointments = [
   {
     id: 0,
-    title: 'Watercolor Landscape',
-    startDate: new Date(2018, 6, 23, 9, 30),
-    endDate: new Date(2018, 6, 23, 11, 30),
-    ownerId: 1,
-  }, {
+    title: 'Cardiología - Sala 5',
+    startDate: new Date(2020, 8, 30, 9, 30),
+    endDate: new Date(2020, 8, 30, 10, 0),
+  }, 
+  {
     id: 1,
-    title: 'Monthly Planning',
-    startDate: new Date(2018, 5, 28, 9, 30),
-    endDate: new Date(2018, 5, 28, 11, 30),
-    ownerId: 1,
-  }, {
+    title: 'Traumatología - Sala 17',
+    startDate: new Date(2020, 8, 28, 11, 0),
+    endDate: new Date(2020, 8, 28, 11, 30),
+  },
+  {
     id: 2,
-    title: 'Recruiting students',
-    startDate: new Date(2018, 6, 9, 12, 0),
-    endDate: new Date(2018, 6, 9, 13, 0),
-    ownerId: 2,
-  }, {
-    id: 3,
-    title: 'Oil Painting',
-    startDate: new Date(2018, 6, 18, 14, 30),
-    endDate: new Date(2018, 6, 18, 15, 30),
-    ownerId: 2,
-  }, {
-    id: 4,
-    title: 'Open Day',
-    startDate: new Date(2018, 6, 20, 12, 0),
-    endDate: new Date(2018, 6, 20, 13, 35),
-    ownerId: 6,
-  }, {
-    id: 5,
-    title: 'Watercolor Landscape',
-    startDate: new Date(2018, 6, 6, 13, 0),
-    endDate: new Date(2018, 6, 6, 14, 0),
-    rRule: 'FREQ=WEEKLY;BYDAY=FR;UNTIL=20180816',
-    exDate: '20180713T100000Z,20180727T100000Z',
-    ownerId: 2,
-  }, {
-    id: 6,
-    title: 'Meeting of Instructors',
-    startDate: new Date(2018, 5, 28, 12, 0),
-    endDate: new Date(2018, 5, 28, 12, 30),
-    rRule: 'FREQ=WEEKLY;BYDAY=TH;UNTIL=20180727',
-    exDate: '20180705T090000Z,20180719T090000Z',
-    ownerId: 5,
-  }, {
-    id: 7,
-    title: 'Oil Painting for Beginners',
-    startDate: new Date(2018, 6, 3, 11, 0),
-    endDate: new Date(2018, 6, 3, 12, 0),
-    rRule: 'FREQ=WEEKLY;BYDAY=TU;UNTIL=20180801',
-    exDate: '20180710T080000Z,20180724T080000Z',
-    ownerId: 3,
-  }, {
-    id: 8,
-    title: 'Watercolor Workshop',
-    startDate: new Date(2018, 6, 9, 11, 0),
-    endDate: new Date(2018, 6, 9, 12, 0),
-    ownerId: 3,
+    title: 'Cardiología - Sala 5',
+    startDate: new Date(2020, 9, 7, 9, 30),
+    endDate: new Date(2020, 9, 7, 10, 0),
   },
 ];
 
@@ -93,24 +50,15 @@ const DayScaleCell = props => (
 
 const styles = theme => ({
   cell: {
-    color: '#78909C!important',
+    color: '#60808C',
     position: 'relative',
     userSelect: 'none',
     verticalAlign: 'top',
     padding: 0,
     height: 100,
     borderLeft: getBorder(theme),
-    '&:first-child': {
-      borderLeft: 'none',
-    },
-    '&:last-child': {
-      paddingRight: 0,
-    },
-    'tr:last-child &': {
-      borderBottom: 'none',
-    },
     '&:hover': {
-      backgroundColor: 'white',
+      backgroundColor: '#D9D9D9',
     },
     '&:focus': {
       backgroundColor: fade(theme.palette.primary.main, 0.15),
@@ -129,20 +77,14 @@ const styles = theme => ({
     padding: '0.5em',
     textAlign: 'center',
   },
-  sun: {
-    color: '#FFEE58',
-  },
-  cloud: {
-    color: '#90A4AE',
-  },
-  rain: {
-    color: '#4FC3F7',
-  },
   opacity: {
+    backgroundColor: '#D9D9D9',
     opacity: '0.5',
   },
   appointment: {
     borderRadius: '10px',
+    display: 'flex',
+    alignItems: 'center',
     '&:hover': {
       opacity: 0.6,
     },
@@ -152,9 +94,6 @@ const styles = theme => ({
       whiteSpace: 'normal !important',
       lineHeight: 1.2,
     },
-  },
-  flexibleSpace: {
-    flex: 'none',
   },
   flexContainer: {
     display: 'flex',
@@ -178,10 +117,6 @@ const styles = theme => ({
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
-  },
-  icon: {
-    color: theme.palette.action.active,
-    verticalAlign: 'middle',
   },
   circle: {
     width: theme.spacing(4.5),
@@ -208,19 +143,12 @@ const CellBase = React.memo(({
   formatDate,
   otherMonth,
 }) => {
-  const iconId = Math.abs(Math.floor(Math.sin(startDate.getDate()) * 10) % 3);
-  const isFirstMonthDay = startDate.getDate() === 1;
-  const formatOptions = isFirstMonthDay
-    ? { day: 'numeric', month: 'long' }
-    : { day: 'numeric' };
+  const formatOptions = { day: 'numeric', month: 'short' };
   return (
     <TableCell
       tabIndex={0}
       className={classNames({
         [classes.cell]: true,
-        [classes.rainBack]: iconId === 0,
-        [classes.sunBack]: iconId === 1,
-        [classes.cloudBack]: iconId === 2,
         [classes.opacity]: otherMonth,
       })}
     >
@@ -282,7 +210,7 @@ export default class Demo extends React.PureComponent {
     const { data } = this.state;
 
     return (
-      <Paper style={{width: '700px', height:'600px'}}>
+      <Paper>
         <Scheduler
           data={data}
         >
@@ -311,8 +239,6 @@ export default class Demo extends React.PureComponent {
           <EditRecurrenceMenu />
           <AppointmentTooltip
             showCloseButton
-            showDeleteButton
-            showOpenButton
           />
           <AppointmentForm />
           <DragDropProvider />

@@ -13,7 +13,6 @@ import Footer from "../Footer"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 0,
-    padding: 0,
     display:"flex",
     flexDirection: "row",
     margin: "12px 0px",
@@ -28,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "20px",
   }
 }));
+
 export default function GestionRecetas() {
   const classes = useStyles();
   return (
