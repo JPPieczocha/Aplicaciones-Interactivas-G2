@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
@@ -52,7 +52,7 @@ export default function CustomizedMenus(props) {
   };
 
   return (
-    <div className="menuDesplegable">
+    <div>
       <Button
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -92,7 +92,7 @@ export default function CustomizedMenus(props) {
         <Link to='/configuracion'><Button className="boton" color="secondary">Configuración</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary" onClick={props.cambio}>Cerrar sesión</Button>
+        <Link to='/'><Button className="boton" color="secondary" onClick={props.cambio}>Cerrar sesión</Button></Link>
         </StyledMenuItem>
       </StyledMenu>
     </div>

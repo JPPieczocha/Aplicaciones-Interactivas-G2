@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Desplegable from './Desplegable.js';
 import InicioRegistro from './InicioRegistro.js'
 import Grid from '@material-ui/core/Grid';
-import logo from './../logo.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,22 +10,23 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
     display:"flex",
     flexDirection: "row",
+    maxWidth: "100%",
   },
-  size:{
-    maxWidth: "100px",
-  }
+  derecha:{
+    maxWidth: 'inherit',
+    marginRight:'20px',
+  },
 }));
 export default function HeaderGrid(props) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Grid container className={classes.root}>
-        <Grid item xs={10}>
-        <img src={logo} className="App-logo" alt="logo" align= "left"/>
+        <Grid item xs>
         Consultorio
         </Grid>
-        <Grid item xs={2} className={classes.size} align='right'>
-         {props.sesion ? <Desplegable cambio={props.cambio}/>: <InicioRegistro/>}
+        <Grid item xs className={classes.derecha} align="right">
+         <InicioRegistro/>
         </Grid>
       </Grid>
     </div>

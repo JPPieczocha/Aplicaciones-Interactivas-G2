@@ -45,7 +45,7 @@ export default function MenuPrincipal(props) {
                     required
                   />
               </div>
-              <button className="btn btn-primary" onClick={props.cambiar}>Ingresar</button>
+              <Link to={'/'}><button className="btn btn-primary" onClick={props.cambiar}>Ingresar</button></Link>
             </form>
         </div>
         <hr/>
