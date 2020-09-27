@@ -12,11 +12,11 @@ import Mapa from './../Mapa'
 const WrappedMap = withScriptjs(withGoogleMap(Mapa));
 
 
-export default function Direccion() {
+export default function Direccion(props) {
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <HeaderGrid/>
+        <HeaderGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar/>

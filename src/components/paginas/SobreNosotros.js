@@ -26,13 +26,13 @@ const useStyles = makeStyles({
   }
 });
 
-export default function SobreNosotros() {
+export default function SobreNosotros(props) {
   const classes = useStyles();
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <HeaderGrid/>
+        <HeaderGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar/>

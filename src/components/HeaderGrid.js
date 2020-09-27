@@ -16,18 +16,17 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100px",
   }
 }));
-export default function HeaderGrid() {
+export default function HeaderGrid(props) {
   const classes = useStyles();
-//InicioRegistro o bien Desplegable//
   return (
     <div className={classes.root}>
       <Grid container className={classes.root}>
-        <Grid item xs>
+        <Grid item xs={10}>
         <img src={logo} className="App-logo" alt="logo" align= "left"/>
         Consultorio
         </Grid>
-        <Grid item xs className={classes.size} align='right'>
-         <Desplegable/>
+        <Grid item xs={2} className={classes.size} align='right'>
+         {props.sesion ? <Desplegable cambio={props.cambio}/>: <InicioRegistro/>}
         </Grid>
       </Grid>
     </div>

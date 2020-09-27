@@ -36,7 +36,7 @@ const StyledMenuItem = withStyles((theme) => ({
   },
 }))(MenuItem);
 
-export default function CustomizedMenus() {
+export default function CustomizedMenus(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -92,7 +92,7 @@ export default function CustomizedMenus() {
         <Link to='/configuracion'><Button className="boton" color="secondary">Configuración</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Button className="boton" color="secondary">Cerrar sesión</Button>
+          <Button className="boton" color="secondary" onClick={props.cambio}>Cerrar sesión</Button>
         </StyledMenuItem>
       </StyledMenu>
     </div>

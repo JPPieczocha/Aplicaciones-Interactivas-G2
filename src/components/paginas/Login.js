@@ -10,12 +10,11 @@ import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 import NavBar from './../NavBar'
 
-export default function MenuPrincipal() {
-
+export default function MenuPrincipal(props) {
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <AutoGrid/>
+        <AutoGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar align="center"/>
@@ -46,7 +45,7 @@ export default function MenuPrincipal() {
                     required
                   />
               </div>
-              <Link to={'/'}><button type="submit" className="btn btn-primary">Ingresar</button></Link>
+              <button className="btn btn-primary" onClick={props.cambiar}>Ingresar</button>
             </form>
         </div>
         <hr/>
