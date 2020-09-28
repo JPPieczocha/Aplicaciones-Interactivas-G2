@@ -31,6 +31,12 @@ const appointments = [
     endDate: new Date(2020, 8, 28, 11, 30),
   },
   {
+    id: 1,
+    title: 'Oftalmología - Sala 2',
+    startDate: new Date(2020, 8, 28, 11, 30),
+    endDate: new Date(2020, 8, 28, 12, 0),
+  },
+  {
     id: 2,
     title: 'Cardiología - Sala 5',
     startDate: new Date(2020, 9, 7, 9, 30),

@@ -6,8 +6,6 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 0,
-    padding: 0,
     display:"flex",
     flexDirection: "row",
     maxWidth: "100%",
@@ -21,9 +19,9 @@ export default function HeaderGrid(props) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Grid container className={classes.root}>
+      <Grid container>
         <Grid item xs style={{marginLeft:"20px"}}>
-        Consultorio
+        ConsulClaudio
         </Grid>
         <Grid item xs className={classes.derecha} align='right'>
          {props.sesion ? <Desplegable cambio={props.cambio}/>: <InicioRegistro/>}

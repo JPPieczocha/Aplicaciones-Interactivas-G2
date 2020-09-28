@@ -4,9 +4,6 @@
 
 .App-barraTitulo {
   background-image: linear-gradient(90deg, #f4ffff, #4B67A4);
-  padding: 0px;
-  font-size: 300%;
-  margin: 0;
   font-style: oblique;
   font-family: Verdana;
   color: #121C3F;
@@ -19,7 +16,6 @@
 .App-header {
   background-image: linear-gradient(0deg, #E6EDF1, #F7FAFB);
   display: flex;
-  margin: 0;
   flex-wrap: wrap;
   float: center;
   font-size: 10%;
@@ -95,8 +91,6 @@
 .boton{
 color: #525194;
 text-shadow: 3px 3px 7px #464646;
-padding: 0;
-margin: auto;
 float: center;
 }
 
@@ -125,3 +119,117 @@ float: center;
   margin: 20px;
 }
 
+/* LOGIN */
+
+.Login {
+  background-image: url("./assets/img/img4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+}
+
+.Login:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 00%;
+  background: rgba(0,0,0,0.7);
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+  z-index: 999;
+  width: 370px;
+  text-align: center;
+  padding: 60px 32px;
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+
+.content header{
+  color: black;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+  margin-top: 20px;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  display: none;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.password:valid ~ .show{
+  display: block;
+}
+
+.space{
+  margin-top: 16px;
+}
+
+.pass a{
+  color: black;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+
+.pass:hover a{
+  text-decoration: underline;
+}
+
+input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.signup{
+  color: black;
+  font-size: 15px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+
+.signup a:hover{
+  text-decoration: underline;
+}

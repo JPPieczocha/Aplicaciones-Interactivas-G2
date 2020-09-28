@@ -7,7 +7,7 @@ import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 import NavBar from './../NavBar'
 
-export default function MenuPrincipal(props) {
+export default function Configuración(props) {
 
     return (
       <div className="App">

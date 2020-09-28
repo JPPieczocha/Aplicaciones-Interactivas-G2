@@ -28,15 +28,11 @@ export default function IngresarNovedades (props) {
                         required
                         />
                     </div>
-                    <br/>
                     <div>
                         <h7 className="campos">Novedad:</h7>
-                        <br/>
-                        <textarea rows="10" cols="100">
-                            
+                        <textarea style={{width:'100%'}} rows="10" cols="100">
                         </textarea>
                     </div>
-                    <br/>
                     <div>
                         <h7 className="campos">Imagen:</h7>
                         <input

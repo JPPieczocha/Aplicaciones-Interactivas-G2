@@ -50,13 +50,13 @@ export default function SobreNosotros(props) {
           image={img4}
         />
           <Typography variant="body2" color="textSecondary" align="justify" style={{marginTop: '10px'}}>
-          En nuestros consultorios, nos importa la calidad del servicio que le brindamos a nuestros pacientes en el día a día. Es por ello que hace más de 20 años juramos tratarte a vos y a todos nuestros pacientes con la mejor atención y y el mayor cuidado posible.
+          En nuestros consultorios, ConsulClaudio, nos importa la calidad del servicio que le brindamos a nuestros pacientes en el día a día. Es por ello que hace más de 20 años juramos tratarte a vos y a todos nuestros pacientes con la mejor atención y el mayor cuidado posible.
           </Typography>
           <Typography variant="body2" color="textSecondary" align="justify" style={{marginTop: '10px'}}>
            Con el objetivo de generar un servicio que ofrece la máxima comodidad, estamos un paso más cerca tuyo gracias a nuestra plataforma. Con esta, permitimos reservas de turnos online, y llevamos registro de tu historial médico.
           </Typography>
           <Typography variant="body2" color="textSecondary" align="justify" style={{marginTop: '10px'}}>
-          Además de todo esto, nos gusta mantener a la gente informada con noticias sobre medicina y cosas relacionadas a esta área; invitamos a charlas informativas a aquellas personas que deseen ser futuros medicos y enfermeros.
+          Además de todo esto, nos gusta mantener a la gente informada con noticias sobre medicina y cosas relacionadas a esta área; invitamos a participar de nuestras charlas informativas a aquellas personas que deseen ser futuros medicos y enfermeros.
           </Typography>
         </CardContent>
       </CardActionArea>

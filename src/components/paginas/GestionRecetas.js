@@ -49,7 +49,7 @@ export default function GestionRecetas(props) {
         variant="contained"
         size="large"
         className={classes.boton}
-      > 2020-10-04 | 18:30
+      > 2020-25-09 | 10:30
         </Button>
         </Grid>
         <Grid item xs align="center">
@@ -57,7 +57,7 @@ export default function GestionRecetas(props) {
         variant="contained"
         size="large"
         className={classes.boton}
-      > 2020-20-01 | 18:30
+      > 2020-20-09 | 13:00
         </Button>
         </Grid>
         <Grid item xs align="center">
@@ -65,7 +65,7 @@ export default function GestionRecetas(props) {
         variant="contained"
         size="large"
         className={classes.boton}
-      > 2020-20-01 | 18:30
+      > 2020-19-09 | 18:30
         </Button>
         </Grid>
       </Grid>

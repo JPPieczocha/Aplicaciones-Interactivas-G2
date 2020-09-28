@@ -1,57 +1,56 @@
 import React from 'react';
 import './../../App.css';
 import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
 
 //Estilos
 import './../../App.css';
 
 //Componentes
-import AutoGrid from './../HeaderGrid.js'
-import Footer from "./../Footer"
-import NavBar from './../NavBar'
+import HeaderGrid from '../HeaderGrid.js'
+import Footer from "../Footer"
+import NavBar from '../NavBar'
+import UserIcon from '@material-ui/icons/Person';
+import LockIcon from '@material-ui/icons/Lock';
 
-export default function MenuPrincipal(props) {
+const useStyles = makeStyles((theme) => ({
+  root:{
+    margin: theme.spacing(1),
+  },
+}));
+
+export default function Login(props) {
+  const classes = useStyles();
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <AutoGrid sesion={props.sesion} cambio={props.cambiar}/>
+        <HeaderGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar align="center"/>
       </div>
-      <div className='App-principal-variante'>
-      <h1 className="titulos">Login</h1>
-        <div className="row" style={{paddingLeft:"60px"}}>
-            <form autoComplete="off">
-              <div className="form-group">
-                <h7 className="campos">Correo:</h7>
-                <input
-                  style={{margin:"20px"}}
-                  type="email"
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                  required
-                />
-              </div>
-              <div className="form-group">
-              <h7 className="campos">Contraseña:</h7>
-                  <input
-                    style={{margin:"20px"}}
-                    type="password"
-                    autoComplete="new-password"
-                    className="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Password"
-                    required
-                  />
-              </div>
-              <Link to={'/'}><button className="btn btn-primary" style={{margin:"30px 20px"}} onClick={props.cambiar}>Ingresar</button></Link>
-            </form>
+      <div className="Login">
+        <div className="content">
+          <header>Iniciar Sesión</header>
+          <form action="#">
+            <div className="field space">
+              <UserIcon className={classes.root}/>
+              <input type="text" required placeholder="Email"></input>
+            </div>
+            <div className="field space">
+              <LockIcon className={classes.root}/>
+              <input type="password" className="password" required placeholder="Contraseña"></input>
+            </div>
+            <Link to={'/'}><button className="btn btn-primary" style={{margin:"30px 20px"}} onClick={props.cambiar}>Iniciar Sesión</button></Link>
+            <div style={{marginBottom: "10px", textAlign:"center"}}>
+              <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div style={{margin: "10px 0px", textAlign:"center"}}>
+              <Link to={'/register'}> ¿No tenes cuenta? Registrate Ahora </Link>
+            </div>
+            
+          </form>
         </div>
-        <h6 style={{paddingLeft:"60px"}}>¿Olvidaste tu contraseña? Puedes recuperarla haciendo click <a href='https://www.youtube.com/watch?v=fC7oUOUEEi4&ab_channel=StackMan'>acá</a>.</h6>
-        <h6 style={{paddingLeft:"60px"}}>¿No tiene cuenta? Puedes registrarte haciendo click <Link to={'/Register'}>acá</Link>.</h6>
       </div>
       <Footer/>
     </div>
