@@ -12,6 +12,8 @@ import ConsultarHistorial from './components/paginas/ConsultarHistorial';
 import SobreNosotros from './components/paginas/SobreNosotros.js';
 import GestionRecetas from './components/paginas/GestionRecetas.js';
 import GestionTurnos from './components/paginas/GestionTurnos.js';
+import MisRecetas from './components/paginas/MisRecetas.js';
+
 
 class App extends React.Component{
 
@@ -44,6 +46,7 @@ class App extends React.Component{
             <Route path='/recetas' component={() => <GestionRecetas sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
             <Route path='/turnos' component={() => <GestionTurnos sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
             <Route path='/login' component={() => <Login sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
+            <Route path='/mis-recetas' component={() => <MisRecetas sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
           </Switch>
         </div>
       </Router>

@@ -80,6 +80,11 @@ export default function CustomizedMenus(props) {
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
+        <Link to={'/mis-recetas'}>
+          <Button className="boton" color="secondary">Mis recetas</Button>
+          </Link>
+        </StyledMenuItem>
+        <StyledMenuItem>
           <Link to='/cargarNovedades'><Button className="boton" color="secondary">Ingresar novedades</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
