@@ -20,7 +20,6 @@ export default function ActualizarHistorial(props) {
             </navbar>
             <main className="App-principal-variante">
             <h1 className="titulos">Consultar Historial Clínico</h1>
-                <br/>
                 <form>
                     <h7 className="campos">Buscar paciente por DNI:    
                         <input type="number"  style={{width: "50%"}} required/>
@@ -28,13 +27,9 @@ export default function ActualizarHistorial(props) {
                     </h7>
                 </form>
                 <br/>
-                <br/>
                 <h7 className="campos" >Historial Médico:
                     <button type='download' style={{width: "50%"}} className="btn btn-primary"><Upload/></button>
                 </h7>
-                <br/>
-                <br/>
-
             </main>
             <Footer/>
         </div>

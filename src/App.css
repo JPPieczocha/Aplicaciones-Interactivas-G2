@@ -2,6 +2,20 @@
   height: unset;
 }
 
+.App-barraTitulo {
+  background-image: linear-gradient(90deg, #f4ffff, #4B67A4);
+  padding: 0px;
+  font-size: 300%;
+  margin: 0;
+  font-style: oblique;
+  font-family: Verdana;
+  color: #121C3F;
+  text-shadow: 3px 3px 6px black;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
 .App-header {
   background-image: linear-gradient(0deg, #E6EDF1, #F7FAFB);
   display: flex;
@@ -17,7 +31,6 @@
 .App-principal {
   background-image: linear-gradient(0deg, #769Cf3, #B6E0F8);
   display: flex;
-  padding-top: 15px;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
@@ -31,19 +44,6 @@
   color: #e2d3ff;
   flex-direction: column;
 }
-.App-barraTitulo {
-  background-image: linear-gradient(90deg, #f4ffff, #4B67A4);
-  padding: 0px;
-  font-size: 300%;
-  margin: 0;
-  font-style: oblique;
-  font-family: Verdana;
-  color: #121C3F;
-  text-shadow: 3px 3px 6px black;
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-}
 
 .Tarjeta{
   font-weight: 900;
@@ -56,6 +56,8 @@
 .App-link {
   color: #525194;
 }
+
+/* -- GUI Text -- */
 
 .titulos{
   margin-left: 30px;
@@ -72,14 +74,6 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  color: white;
-  font-style: oblique;
-}
-
-.campos{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
   color: white;
   font-style: oblique;
 }
@@ -102,20 +96,19 @@ float: center;
   width: 100%;
 }
 
-/* --LOGIN y REGISTER--*/
-.loginRegister {
-  background-image: linear-gradient(0deg, #769Cf3, #B6E0F8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
-
 /* --CONFIGURACION--*/
 
 .botonConfig {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.campos{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: white;
+  font-style: oblique;
+  margin: 20px;
 }
 

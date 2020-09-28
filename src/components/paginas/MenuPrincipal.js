@@ -17,7 +17,7 @@ export default function MenuPrincipal(props) {
       <div className="App-header">
         <NavBar/>
       </div>
-      <div className="App-principal">
+      <div className="App-principal"  style={{paddingTop: "15px"}}>
         <Slider />
       </div>
       <Footer/>

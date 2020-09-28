@@ -20,7 +20,6 @@ export default function ActualizarHistorial(props) {
             </navbar>
             <main className="App-principal-variante">
             <h1 className="titulos">Actualizar Historial Clínico</h1>
-                <br/>
                 <form>
                     <form>
                     <h7 className="campos">Buscar paciente por DNI:   
@@ -29,8 +28,7 @@ export default function ActualizarHistorial(props) {
                         </h7>
                     </form>
                     <br/>
-                    <br/>
-                    <h7 className="campos">Historial Médico:</h7>
+                    <h7 className="campos">Historial Médico:
                     <input
                         style={{width: "50%"}}
                         type="file"
@@ -39,11 +37,8 @@ export default function ActualizarHistorial(props) {
                         id="exampleInputPassword1"
                         placeholder="Cargar archivo"
                         required/>
-                    <br/>
-                    <br/>
-                    <button type='submit' className="btn btn-primary"><Upload/></button>
-                    <br/>
-                    <br/>
+                        </h7>
+                    <button style={{margin: "20px"}} type='submit' className="btn btn-primary"><Upload/></button>
                 </form>
 
             </main>

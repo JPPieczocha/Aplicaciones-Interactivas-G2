@@ -37,7 +37,7 @@ export default function SobreNosotros(props) {
       <div className="App-header">
         <NavBar/>
       </div>
-      <div className="App-principal-variante" >
+      <div className="App-principal" >
         <Container align="center">
         <Card className={classes.root}>
       <CardActionArea>

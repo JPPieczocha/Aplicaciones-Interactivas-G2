@@ -22,11 +22,11 @@ export default function HeaderGrid(props) {
   return (
     <div className={classes.root}>
       <Grid container className={classes.root}>
-        <Grid item xs>
+        <Grid item xs style={{marginLeft:"20px"}}>
         Consultorio
         </Grid>
-        <Grid item xs className={classes.derecha} align="right">
-         <InicioRegistro/>
+        <Grid item xs className={classes.derecha} align='right'>
+         {props.sesion ? <Desplegable cambio={props.cambio}/>: <InicioRegistro/>}
         </Grid>
       </Grid>
     </div>
