@@ -20,7 +20,7 @@ export default function HeaderGrid(props) {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs style={{marginLeft:"20px"}}>
+        <Grid item xs style={{marginLeft:"10px", fontSize:"50px"}}>
         ConsulClaudio
         </Grid>
         <Grid item xs className={classes.derecha} align='right'>

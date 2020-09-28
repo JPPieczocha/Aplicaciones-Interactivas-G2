@@ -121,21 +121,18 @@ float: center;
 
 /* LOGIN */
 
-.Login {
-  background-image: url("./assets/img/img4.jpg");
+.login {
+  background-image: url("./assets/img/clinica.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.register {
+  background-image: url("./assets/img/clinica2.jpg");
   background-size: cover;
   background-position: center;
   height: 110vh;
-}
-
-.Login:after{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 00%;
-  background: rgba(0,0,0,0.7);
 }
 
 .content{

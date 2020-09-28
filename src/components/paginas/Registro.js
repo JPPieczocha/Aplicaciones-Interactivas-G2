@@ -19,10 +19,10 @@ export default function Login(props) {
       <div className="App-header">
         <NavBar align="center"/>
       </div>
-      <div className="Login">
+      <div className="register">
         <div className="content">
           <header>Registrarse</header>
-          <form action="#">
+          <form>
             <div className="field space">
             <input
                   type="text"

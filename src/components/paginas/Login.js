@@ -29,10 +29,10 @@ export default function Login(props) {
       <div className="App-header">
         <NavBar align="center"/>
       </div>
-      <div className="Login">
+      <div className="login">
         <div className="content">
           <header>Iniciar Sesión</header>
-          <form action="#">
+          <form>
             <div className="field space">
               <UserIcon className={classes.root}/>
               <input type="text" required placeholder="Email"></input>
@@ -43,7 +43,7 @@ export default function Login(props) {
             </div>
             <Link to={'/'}><button className="btn btn-primary" style={{margin:"30px 20px"}} onClick={props.cambiar}>Iniciar Sesión</button></Link>
             <div style={{marginBottom: "10px", textAlign:"center"}}>
-              <a href="#">¿Olvidaste tu contraseña?</a>
+              <Link to={'/'}>¿Olvidaste tu contraseña?</Link>
             </div>
             <div style={{margin: "10px 0px", textAlign:"center"}}>
               <Link to={'/register'}> ¿No tenes cuenta? Registrate Ahora </Link>
