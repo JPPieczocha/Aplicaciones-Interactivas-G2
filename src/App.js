@@ -18,7 +18,7 @@ class App extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
-      sesion: true
+      sesion: false
     }
 
     this.cambiaSesion = this.cambiaSesion.bind(this) 
@@ -33,17 +33,17 @@ class App extends React.Component{
       <Router>
         <div className="App">
           <Switch>
-            <Route path='/' component={MenuPrincipal} exact/>
-            <Route path='/direccion' component={Direccion} />
-            <Route path='/login' component={Login}/>
-            <Route path='/register' component={Register}/>
-            <Route path='/cargarNovedades' component={IngresarNovedades} />
-            <Route path='/actualizarHistorial' component={ActualizarHistorial} />
-            <Route path='/consultarHistorial' component={ConsultarHistorial} />
-            <Route path='/configuracion' component={Configuracion} />
-            <Route path='/about-us' component={SobreNosotros} />
-            <Route path='/recetas' component={GestionRecetas}/>
-            <Route path='/turnos' component={GestionTurnos}/>
+            <Route path='/' component={() => <MenuPrincipal sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} exact/>
+            <Route path='/direccion' component={() => <Direccion sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} />
+            <Route path='/login' component={() => <Login sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
+            <Route path='/register' component={() => <Register sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
+            <Route path='/cargarNovedades' component={() => <IngresarNovedades sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} />
+            <Route path='/actualizarHistorial' component={() => <ActualizarHistorial sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} />
+            <Route path='/consultarHistorial' component={() => <ConsultarHistorial sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} />
+            <Route path='/configuracion' component={() => <Configuracion sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} />
+            <Route path='/about-us' component={() => <SobreNosotros sesion={this.state.sesion} cambiar={this.cambiaSesion}/>} />
+            <Route path='/recetas' component={() => <GestionRecetas sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
+            <Route path='/turnos' component={() => <GestionTurnos sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
           </Switch>
         </div>
       </Router>

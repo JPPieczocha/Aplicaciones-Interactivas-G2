@@ -18,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function GestionTurnos() {
+export default function GestionTurnos(props) {
   const classes = useStyles();
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <HeaderGrid/>
+        <HeaderGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar/>

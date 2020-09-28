@@ -7,17 +7,17 @@ import HeaderGrid from '../HeaderGrid.js'
 import Footer from "./../Footer"
 import Slider from './../Slider'
 
-export default function MenuPrincipal() {
+export default function MenuPrincipal(props) {
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <HeaderGrid/>
+        <HeaderGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar/>
       </div>
-      <div className="App-principal">
+      <div className="App-principal"  style={{paddingTop: "15px"}}>
         <Slider />
       </div>
       <Footer/>

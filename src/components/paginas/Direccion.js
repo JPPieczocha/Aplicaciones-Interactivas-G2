@@ -12,19 +12,17 @@ import Mapa from './../Mapa'
 const WrappedMap = withScriptjs(withGoogleMap(Mapa));
 
 
-export default function Direccion() {
+export default function Direccion(props) {
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <HeaderGrid/>
+        <HeaderGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar/>
       </div>
       <div className="App-principal-variante">
-        <br/>
         <h3 align="center" className="titulos">Dirección: <span>Avenida Siempreviva 742, Springfield, Oregon, USA</span></h3>
-        <br/>
         <div style={{height: "60vh"}}>
           <WrappedMap
               googleMapURL = {'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}

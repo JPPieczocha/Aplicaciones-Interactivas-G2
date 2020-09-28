@@ -10,23 +10,24 @@ import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 import NavBar from './../NavBar'
 
-export default function MenuPrincipal() {
+export default function Register(props) {
 
   return (
     <div className="App">
       <header className="App-barraTitulo">
-        <AutoGrid/>
+        <AutoGrid sesion={props.sesion} cambio={props.cambiar}/>
       </header>
       <div className="App-header">
         <NavBar align="center"/>
       </div>
-      <div className='loginRegister'>
-        <h2>Registro</h2>
-        <div className="row">
+      <div className='App-principal-variante'>
+      <h1 className="titulos">Registro</h1>
+        <div className="row" style={{paddingLeft:"60px"}}>
             <form autoComplete="off">
               <div className="form-group">
-                <h7>Nombre:</h7>
+                <h7 className="campos">Nombre:</h7>
                 <input
+                  style={{margin:"20px"}}
                   type="text"
                   className="form-control"
                   id="nombre"
@@ -35,8 +36,9 @@ export default function MenuPrincipal() {
                 />
               </div>
               <div className="form-group">
-              <h7>Apellido:</h7>
+              <h7 className="campos">Apellido:</h7>
                 <input
+                  style={{margin:"20px"}}
                   type="text"
                   className="form-control"
                   id="apellido"
@@ -45,8 +47,9 @@ export default function MenuPrincipal() {
                 />
               </div>
               <div className="form-group">
-                <h7>Correo:</h7>
+                <h7 className="campos">Correo:</h7>
                 <input
+                  style={{margin:"20px"}}
                   type="email"
                   className="form-control"
                   id="correo"
@@ -55,8 +58,9 @@ export default function MenuPrincipal() {
                 />
               </div>
               <div className="form-group">
-                <h7>Confirme su correo:</h7>
+                <h7 className="campos">Confirme su correo:</h7>
                 <input
+                  style={{margin:"20px"}}
                   type="email"
                   className="form-control"
                   id="correoConfirm"
@@ -66,8 +70,9 @@ export default function MenuPrincipal() {
                 />
               </div>
               <div className="form-group">
-                <h7>Correo:</h7>
+                <h7 className="campos">Contraseña:</h7>
                 <input
+                  style={{margin:"20px"}}
                   type="password"
                   autoComplete="new-password"
                   className="form-control"
@@ -77,8 +82,9 @@ export default function MenuPrincipal() {
                 />
               </div>
               <div className="form-group">
-                <h7>Confirme su contraseña:</h7>
+                <h7 className="campos">Confirme su contraseña:</h7>
                 <input
+                  style={{margin:"20px"}}
                   type="password"
                   autoComplete="new-password"
                   className="form-control"
@@ -87,11 +93,10 @@ export default function MenuPrincipal() {
                   required
                 />
               </div>
-              <Link to={'/'}><button type="submit" className="btn btn-primary" >Registrarse</button></Link>
+              <Link to={'/'}><button style={{margin:"30px 20px"}} className="btn btn-primary" onClick={props.cambiar}>Registrarse</button></Link>
             </form>
         </div>
-        <hr/>
-        <h6>¿Tiene cuenta? Puedes iniciar sesión haciendo click <Link to={'/Login'}>acá</Link>.</h6>
+        <h6 style={{paddingLeft:"60px"}}>¿Tiene cuenta? Puedes iniciar sesión haciendo click <Link to={'/Login'}>acá</Link>.</h6>
       </div>
       <Footer/>
     </div>

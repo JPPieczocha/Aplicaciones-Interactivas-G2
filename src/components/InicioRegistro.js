@@ -3,7 +3,7 @@ import {Button, ButtonGroup} from '@material-ui/core';
 import "./../App.css"
 import { Link } from 'react-router-dom'
 
-export default function InicioRegistro() {
+export default function InicioRegistro(props) {
 
   return (
     <div>

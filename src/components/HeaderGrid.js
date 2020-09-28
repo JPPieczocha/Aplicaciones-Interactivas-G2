@@ -17,17 +17,16 @@ const useStyles = makeStyles((theme) => ({
     marginRight:'20px',
   },
 }));
-export default function HeaderGrid() {
+export default function HeaderGrid(props) {
   const classes = useStyles();
-//InicioRegistro o bien Desplegable//
   return (
     <div className={classes.root}>
       <Grid container className={classes.root}>
-        <Grid item xs>
+        <Grid item xs style={{marginLeft:"20px"}}>
         Consultorio
         </Grid>
-        <Grid item xs className={classes.derecha} align="right">
-         <Desplegable/>
+        <Grid item xs className={classes.derecha} align='right'>
+         {props.sesion ? <Desplegable cambio={props.cambio}/>: <InicioRegistro/>}
         </Grid>
       </Grid>
     </div>

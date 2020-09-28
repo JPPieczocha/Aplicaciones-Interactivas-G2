@@ -7,21 +7,21 @@ import AutoGrid from './../HeaderGrid.js'
 import Footer from "./../Footer"
 import NavBar from './../NavBar'
 
-export default function MenuPrincipal() {
+export default function MenuPrincipal(props) {
 
     return (
       <div className="App">
         <header className="App-barraTitulo">
-          <AutoGrid/>
+          <AutoGrid sesion={props.sesion} cambio={props.cambiar}/>
         </header>
         <div className="App-header">
           <NavBar align="center"/>
         </div>
         <div className='App-principal-variante'>
         <h1 className="titulos">Configuraciones</h1>
-          <div style={{width:"500px", alignItems: "left"}}>
+          <div style={{width:"40%", alignItems: "left"}}>
               <form autoComplete="off">
-                  <h6 className="campos" style={{margin:"20px"}}>Email:</h6>
+                  <h6 className="campos">Email:</h6>
                   <input
                     type="email"
                     className="form-control"
@@ -31,7 +31,7 @@ export default function MenuPrincipal() {
                     placeholder="Ingresar Email"
                     required
                   />
-                  <h6 className="campos" style={{margin:"20px"}}>Telefono:</h6>
+                  <h6 className="campos">Telefono:</h6>
                     <input
                       type="text"
                       autoComplete="new-password"
@@ -41,7 +41,7 @@ export default function MenuPrincipal() {
                       placeholder="Ingresar Telefono"
                       required
                     />
-                  <h6 className="campos" style={{margin:"20px"}}>Numero de Socio:</h6>
+                  <h6 className="campos">Numero de Socio:</h6>
                     <input
                       type="text"
                       autoComplete="new-password"
@@ -51,7 +51,7 @@ export default function MenuPrincipal() {
                       placeholder="Ingresar Numero de Socio"
                       required
                     />
-                  <h6 className="campos" style={{margin:"20px"}}>Nueva Contraseña:</h6>
+                  <h6 className="campos">Nueva Contraseña:</h6>
                     <input
                       type="password"
                       autoComplete="new-password"
@@ -61,7 +61,7 @@ export default function MenuPrincipal() {
                       placeholder="Ingresar Contrasena"
                       required
                     />
-                  <h6 className="campos" style={{margin:"20px"}}>Confirmar Nueva Contraseña:</h6>
+                  <h6 className="campos">Confirmar Nueva Contraseña:</h6>
                     <input
                       type="password"
                       autoComplete="new-password"
@@ -75,7 +75,7 @@ export default function MenuPrincipal() {
               </form>
             </div>
             <Link to={'/'}>
-              <button type="submit" className="btn btn-primary botonConfig" style={{margin:"20px"}}>Guardar Cambios</button>
+              <button type="submit" className="btn btn-primary" style={{margin:"30px 20px"}}>Guardar Cambios</button>
             </Link>
           </div>
           <Footer/>
