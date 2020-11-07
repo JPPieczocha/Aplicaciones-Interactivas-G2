@@ -1,12 +1,12 @@
 import React from 'react';
-import './../../App.css';
+import './../App.css';
 import {withScriptjs, withGoogleMap} from 'react-google-maps';
 
 //Componentes
-import NavBar from './../NavBar.js'
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "./../Footer"
-import Mapa from './../Mapa'
+import NavBar from './../components/NavBar.js'
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "./../components/Footer"
+import Mapa from './../components/Mapa'
 
 //const mapURL= 'googleMapURL= "https://maps.googleapis.com/maps/api/js?key=${CredencialMapa.mapsKey}'
 const WrappedMap = withScriptjs(withGoogleMap(Mapa));

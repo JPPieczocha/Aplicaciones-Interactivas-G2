@@ -1,11 +1,11 @@
 import React from 'react';
-import './../../App.css';
+import './../App.css';
 
 //Componentes
-import NavBar from './../NavBar.js'
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "./../Footer"
-import Slider from './../Slider'
+import NavBar from './../components/NavBar.js'
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "./../components/Footer"
+import Slider from './../components/Slider'
 
 export default function MenuPrincipal(props) {
 

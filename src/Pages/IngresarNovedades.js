@@ -1,8 +1,8 @@
 import React from 'react'
 
-import NavBar from './../NavBar.js'
-import AutoGrid from './../HeaderGrid.js'
-import Footer from "./../Footer"
+import NavBar from './../components/NavBar.js'
+import AutoGrid from './../components/HeaderGrid.js'
+import Footer from "./../components/Footer"
 
 export default function IngresarNovedades (props) {
     return (

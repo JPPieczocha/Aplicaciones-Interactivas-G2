@@ -1,11 +1,11 @@
 import React from 'react';
-import './../../App.css';
-import RecetasPacientes from './../RecetasPaciente';
+import './../App.css';
 
 //Componentes
-import NavBar from '../NavBar.js'
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "../Footer"
+import NavBar from '../components/NavBar.js'
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "../components/Footer"
+import RecetasPacientes from './../components/RecetasOtros';
 
 
 export default function GestionRecetas(props) {

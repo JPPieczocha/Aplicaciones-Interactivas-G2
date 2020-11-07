@@ -1,15 +1,15 @@
 import React from 'react';
-import './../../App.css';
+import './../App.css';
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 
 //Estilos
-import './../../App.css';
+import './../App.css';
 
 //Componentes
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "../Footer"
-import NavBar from '../NavBar'
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "../components/Footer"
+import NavBar from '../components/NavBar'
 import UserIcon from '@material-ui/icons/Person';
 import LockIcon from '@material-ui/icons/Lock';
 

@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import MenuPrincipal from './components/paginas/MenuPrincipal';
-import Direccion from './components/paginas/Direccion';
-import Login from './components/paginas/Login';
-import Register from './components/paginas/Registro';
-import Configuracion from './components/paginas/Configuracion';
-import IngresarNovedades from './components/paginas/IngresarNovedades';
-import ActualizarHistorial from './components/paginas/ActualizarHistorial';
-import ConsultarHistorial from './components/paginas/ConsultarHistorial';
-import SobreNosotros from './components/paginas/SobreNosotros.js';
-import GestionRecetas from './components/paginas/GestionRecetas.js';
-import GestionTurnos from './components/paginas/GestionTurnos.js';
-import MisRecetas from './components/paginas/MisRecetas.js';
+import MenuPrincipal from './Pages/MenuPrincipal';
+import Direccion from './Pages/Direccion';
+import Login from './Pages/Login';
+import Register from './Pages/Registro';
+import Configuracion from './Pages/Configuracion';
+import IngresarNovedades from './Pages/IngresarNovedades';
+import ActualizarHistorial from './Pages/ActualizarHistorial';
+import ConsultarHistorial from './Pages/ConsultarHistorial';
+import SobreNosotros from './Pages/SobreNosotros.js';
+import GestionRecetas from './Pages/GestionRecetas.js';
+import GestionTurnos from './Pages/GestionTurnos.js';
+import MisRecetas from './Pages/MisRecetas.js';
 
 
 class App extends React.Component{

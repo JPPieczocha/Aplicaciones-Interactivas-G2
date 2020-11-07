@@ -1,14 +1,13 @@
 import React from 'react';
-import './../../App.css';
 import { Link } from 'react-router-dom'
 
 //Estilos
-import './../../App.css';
+import './../App.css';
 
 //Componentes
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "../Footer"
-import NavBar from '../NavBar';
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "../components/Footer"
+import NavBar from '../components/NavBar';
 
 export default function Login(props) {
   return (

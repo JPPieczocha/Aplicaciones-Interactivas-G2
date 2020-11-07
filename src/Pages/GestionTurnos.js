@@ -1,14 +1,14 @@
 import React from 'react';
-import './../../App.css';
+import './../App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import Calendario from './../Calendario.js'
+import Calendario from './../components/Calendario.js'
 import Grid from '@material-ui/core/Grid';
 import {Button} from '@material-ui/core';
 
 //Componentes
-import NavBar from '../NavBar.js'
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "../Footer"
+import NavBar from '../components/NavBar.js'
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "../components/Footer"
 
 const useStyles = makeStyles((theme) => ({
   root: {

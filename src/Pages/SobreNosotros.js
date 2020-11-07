@@ -1,18 +1,18 @@
 import React from 'react';
-import './../../App.css';
+import './../App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import img4 from './../../assets/img/img4.jpg';
+import img4 from './../assets/img/img4.jpg';
 import Container from '@material-ui/core/Container';
 
 //Componentes
-import NavBar from './../NavBar.js'
-import HeaderGrid from '../HeaderGrid.js'
-import Footer from "./../Footer"
+import NavBar from './../components/NavBar.js'
+import HeaderGrid from '../components/HeaderGrid.js'
+import Footer from "./../components/Footer"
 
 const useStyles = makeStyles({
   root: {
