@@ -3,7 +3,7 @@ import './../App.css';
 
 //Componentes
 import RecetasPacientes from './../components/RecetasPaciente';
-import NavBar from '../components/Footer'
+import NavBar from '../components/NavBar'
 import HeaderGrid from '../components/HeaderGrid.js'
 import Footer from "../components/Footer"
 
