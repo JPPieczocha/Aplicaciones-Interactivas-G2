@@ -223,8 +223,9 @@ export default class Demo extends React.PureComponent {
           <EditingState
             onCommitChanges={this.commitChanges}
           />
+          
           <ViewState
-            defaultCurrentDate="2020-09-27"
+            defaultCurrentDate={Date.now()}
           />
 
           <MonthView

@@ -13,6 +13,8 @@ import SobreNosotros from './Pages/SobreNosotros.js';
 import GestionRecetas from './Pages/GestionRecetas.js';
 import GestionTurnos from './Pages/GestionTurnos.js';
 import MisRecetas from './Pages/MisRecetas.js';
+import ABMUsuarios from './Pages/ABMUsuarios'
+import Novedades from './Pages/Novedades'
 
 
 class App extends React.Component{
@@ -47,6 +49,8 @@ class App extends React.Component{
             <Route path='/turnos' component={() => <GestionTurnos sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
             <Route path='/login' component={() => <Login sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
             <Route path='/mis-recetas' component={() => <MisRecetas sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
+            <Route path='/ABMUsuarios' component={() => <ABMUsuarios sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
+            <Route path='/Novedades' component={() => <Novedades sesion={this.state.sesion} cambiar={this.cambiaSesion}/>}/>
           </Switch>
         </div>
       </Router>

@@ -21,6 +21,19 @@ export default function Configuración(props) {
         <h1 className="titulos">Configuraciones</h1>
           <div style={{width:"40%", alignItems: "left"}}>
               <form autoComplete="off">
+
+                  <h6 className="campos">DNI:</h6>
+                    <input
+                      type="text"
+                      autoComplete="new-password"
+                      className="form-control"
+                      style={{margin:"20px"}}
+                      id="dni"
+                      placeholder={"42069"}
+                      disabled
+                    />
+
+
                   <h6 className="campos">Email:</h6>
                   <input
                     type="email"
@@ -28,29 +41,28 @@ export default function Configuración(props) {
                     style={{margin:"20px"}}
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
-                    placeholder="Ingresar Email"
-                    required
+                    placeholder={"ejem@plo.com"}
+                    disabled
                   />
-                  <h6 className="campos">Telefono:</h6>
-                    <input
-                      type="text"
-                      autoComplete="new-password"
-                      className="form-control"
-                      style={{margin:"20px"}}
-                      id="exampleInputPassword1"
-                      placeholder="Ingresar Telefono"
-                      required
-                    />
-                  <h6 className="campos">Numero de Socio:</h6>
-                    <input
-                      type="text"
-                      autoComplete="new-password"
-                      className="form-control"
-                      style={{margin:"20px"}}
-                      id="exampleInputPassword1"
-                      placeholder="Ingresar Numero de Socio"
-                      required
-                    />
+
+                  <h6 className="campos">Obra social:</h6>
+                  <input
+                    type="text"
+                    className="form-control"
+                    style={{margin:"20px"}}
+                    id="obraSocial"
+                    aria-describedby="emailHelp"
+                    placeholder="Ingrese su obra social"
+                  />
+                  <input
+                    type="number"
+                    className="form-control"
+                    style={{margin:"20px"}}
+                    id="nroos"
+                    aria-describedby="emailHelp"
+                    placeholder="Ingrese su número de Obra Social"
+                  />
+
                   <h6 className="campos">Nueva Contraseña:</h6>
                     <input
                       type="password"
@@ -58,17 +70,16 @@ export default function Configuración(props) {
                       className="form-control"
                       style={{margin:"20px"}}
                       id="exampleInputPassword1"
-                      placeholder="Ingresar Contrasena"
+                      placeholder="Ingresar Contraseña"
                       required
                     />
-                  <h6 className="campos">Confirmar Nueva Contraseña:</h6>
                     <input
                       type="password"
                       autoComplete="new-password"
                       className="form-control"
                       style={{margin:"20px"}}
                       id="exampleInputPassword1"
-                      placeholder="Reingresar Contrasena"
+                      placeholder="Confirmar Contraseña"
                       required
                       />
                     
