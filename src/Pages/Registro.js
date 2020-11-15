@@ -86,6 +86,8 @@ export default class Login extends React.Component {
         </div>
         <form>
           <div className="register">
+          <div className="row" style={{width:"100%"}} align="center">
+          <div className="col">
             <div className="content">
               <header>Registrarse</header>
               <div className="field space">
@@ -120,17 +122,6 @@ export default class Login extends React.Component {
               </div>
               <div className="field space">
                 <input
-                type="email"
-                className="form-control"
-                id="correoConfirm"
-                aria-describedby="emailHelp"
-                placeholder="Confirme email"
-                onChange={this.handleConfirmEmail}
-                required
-                />
-              </div>
-              <div className="field space">
-                <input
                 type="number"
                 className="form-control"
                 id="DNI"
@@ -151,21 +142,13 @@ export default class Login extends React.Component {
                 required
                 />
               </div>
-              <div className="field space">
-                <input
-                type="password"
-                autoComplete="new-password"
-                className="form-control"
-                id="exampleConfirmPassword1"
-                placeholder="Confirme contraseña"
-                onchange={this.handleConfirmPassword}
-                required
-                />
-              </div>
               <Link to={'/'}><button className="btn btn-primary" style={{margin:"30px 20px"}} onClick={this.state.cambio}>Registrarse</button></Link>
+            </div>
+            </div>
             </div>
           </div>
         </form>
+        
         <Footer/>
       </div>
     )

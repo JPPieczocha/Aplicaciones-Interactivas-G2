@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
 
   return (
-    <div>
+    <div className="align-items-center">
      <ButtonGroup variant="text" aria-label="text primary button group">
         <Link to={'/'}>
           <Button className="boton" color="primary"> Home </Button>

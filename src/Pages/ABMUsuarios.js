@@ -1,15 +1,23 @@
 import React from 'react';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 import './../App.css';
 import { Link } from 'react-router-dom'
+import SearchIcon from '@material-ui/icons/Search';
 
 //Componentes
 import Header from './../components/HeaderGrid.js'
 import Footer from "./../components/Footer"
 import NavBar from './../components/NavBar'
 
-import {Grid} from '@material-ui/core'
-
 export default function Configuración(props) {
+
+  const [value, setValue] = React.useState('Paciente');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
 
     return (
       <div className="App">
@@ -20,127 +28,38 @@ export default function Configuración(props) {
           <NavBar align="center"/>
         </div>
         <div className='App-principal-variante'>
-        <h1 className="titulos">Configuraciones</h1>
-          <div style={{width:"40%", alignItems: "left"}}>
+        <h1 className="titulos">ABM Usuarios</h1>
+          <div style={{width:"50%"}}>
               <form autoComplete="off">
 
-                    <h6 className="campos">Nombre:</h6>
-                    <input
-                      type="text"
-                      className="form-control"
-                      style={{margin:"20px"}}
-                      id="nombre"
-                      placeholder="Ingresar Nombre"
-                      required
-                    />
-
-                    <h6 className="campos">Apellido:</h6>
-                    <input
-                      type="text"
-                      className="form-control"
-                      style={{margin:"20px"}}
-                      id="apellido"
-                      placeholder="Ingresar apellido"
-                      required
-                    />
-
-                    <h6 className="campos">DNI:</h6>
+                    <h7 className="campos">DNI:</h7>
+                    <div>
                     <input
                     type="text"
                     autoComplete="new-password"
                     className="form-control"
-                    style={{margin:"20px"}}
+                    style={{margin:"0px 20px"}}
                     id="exampleInputPassword1"
                     placeholder="Ingresar Numero de DNI"
                     required
                     />
-
-
-                  <h6 className="campos">Email:</h6>
-                  <input
-                    type="email"
-                    className="form-control"
-                    style={{margin:"20px"}}
-                    id="exampleInputEmail1"
-                    placeholder="Ingresar Email"
-                    required
-                  />
-                  <input
-                    type="email"
-                    className="form-control"
-                    style={{margin:"20px"}}
-                    id="confirmEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Confirmar Email"
-                    required
-                  />
-
-                    <h6 className="campos">Contraseña:</h6>
-                    <input
-                      type="password"
-                      autoComplete="new-password"
-                      className="form-control"
-                      style={{margin:"20px"}}
-                      id="exampleInputPassword1"
-                      placeholder="Ingresar Contrasena"
-                      required
-                    />
-                    <input
-                      type="password"
-                      autoComplete="new-password"
-                      className="form-control"
-                      style={{margin:"20px"}}
-                      id="exampleInputPassword1"
-                      placeholder="Confirmar Contrasena"
-                      required
-                      />
-
-                    <h6 className="campos">Permisos:</h6>
-                    <Grid container spacing={3}>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Médico/a [Espoecialidad]</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Secretario/a</label> <input type="checkbox"/><br/>
-                        </Grid>
-
-                        <Grid item xs={12} sm={6} md={4}>
-                            <label className="checkText">Administrador/a</label> <input type="checkbox"/><br/>
-                        </Grid>
-                    </Grid>
-                    
+                    <button type="submit" className="btn btn-primary" style={{width:"100%", margin:"0px 20px"}}><SearchIcon/></button>
+                    </div>
                     
 
+                    <h7 className="campos">Permisos:</h7>
+
+                      <RadioGroup style={{margin:"20px"}} aria-label="gender" name="gender1" value={value} onChange={handleChange}>
+                        <FormControlLabel value="Paciente" control={<Radio />} label="Paciente" />
+                        <FormControlLabel value="Medico" control={<Radio />} label="Médico/a" />
+                        <FormControlLabel value="Secretaria" control={<Radio />} label="Secretario/a" />
+                        <FormControlLabel value="Administrador" control={<Radio />} label="Administrador/a" />
+                      </RadioGroup>
                     
               </form>
             </div>
             <Link to={'/'}>
-              <button type="submit" className="btn btn-primary" style={{margin:"30px 20px"}}>Guardar Cambios</button>
+              <button type="submit" className="btn btn-primary" style={{margin:"20px 20px"}}>Guardar Cambios</button>
             </Link>
           </div>
           <Footer/>

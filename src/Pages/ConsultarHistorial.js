@@ -21,15 +21,49 @@ export default function ActualizarHistorial(props) {
             <main className="App-principal-variante">
             <h1 className="titulos">Consultar Historial Clínico</h1>
                 <form>
-                    <h7 className="campos">Buscar paciente por DNI:    
-                        <input type="number"  style={{width: "50%"}} required/>
-                        <button type="submit" style={{width: "50%"}} className="btn btn-primary"><SearchIcon/></button>
+                <h7 className="campos">Buscar paciente por DNI:</h7>
+                    <div style={{width:"50%"}}>
+                    <input
+                    type="text"
+                    autoComplete="new-password"
+                    className="form-control"
+                    style={{margin:"0px 20px"}}
+                    id="exampleInputPassword1"
+                    placeholder="Ingresar Numero de DNI"
+                    required
+                    />
+                    <button type="submit" className="btn btn-primary" style={{width:"100%", margin:"0px 20px"}}><SearchIcon/></button>
+                    </div>
+                    <div>
+                    <h7 className="campos">Historial Médico:
+                    <div className="row" style={{width:"70%"}} align="center">
+                    <div className="col" align="center">
+                    <input
+                      type="text"
+                      className="form-control"
+                      style={{margin:"20px 0px"}}
+                      id="nombre"
+                      value={"Clara"}
+                      disabled
+                    /></div>
+                     <div className="col" align="center">
+                    <input
+                      type="text"
+                      className="form-control"
+                      style={{margin:"20px 0px"}}
+                      id="nombre"
+                      value={"Gomez"}
+                      disabled
+                    />
+                    </div>
+                    </div>
+                        <textarea className="form-control" disabled placeholder="Cabecera..." style={{width:'100%', margin:"10px 0px"}} rows="5">
+                        </textarea>
+                        <textarea className="form-control" disabled placeholder="Detalles..." style={{width:'100%', margin:"10px 0px"}} rows="10">
+                        </textarea>
                     </h7>
+                    </div>
                 </form>
-                <br/>
-                <h7 className="campos" >Historial Médico:
-                    <button type='download' style={{width: "50%"}} className="btn btn-primary"><Upload/></button>
-                </h7>
             </main>
             <Footer/>
         </div>

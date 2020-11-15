@@ -7,7 +7,7 @@ export default function InicioRegistro(props) {
 
   return (
     <div>
-     <ButtonGroup variant="text">
+     <ButtonGroup variant="text" className="align-items-center">
         <Link to={'/login'}><Button className="boton"> Iniciar Sesión </Button></Link>
         <Link to={'/register'}><Button className="boton"> Registrarse </Button></Link>
      </ButtonGroup>

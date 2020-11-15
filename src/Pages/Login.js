@@ -50,14 +50,16 @@ export default class Login extends React.Component {
           <NavBar align="center"/>
         </div>
         <div className="login">
-          <div className="content">
+          <div className="row" style={{width:"100%"}} align="center">
+            <div className="col">
+            <div className="content">
             <header>Iniciar Sesión</header>
             <form>
-              <div className="field space">
+              <div className="field align-items-center">
                 <UserIcon/>
                 <input type="email" required placeholder="Email" onChange={this.handleEmail}></input>
               </div>
-              <div className="field space">
+              <div className="field align-items-center">
                 <LockIcon/>
                 <input type="password" className="password" required placeholder="Contraseña" onChange={this.handlePassword}></input>
               </div>
@@ -70,6 +72,8 @@ export default class Login extends React.Component {
               </div>
               
             </form>
+            </div>
+            </div>
           </div>
         </div>
         <Footer/>

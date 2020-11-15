@@ -18,22 +18,45 @@ export default function Configuración(props) {
           <NavBar align="center"/>
         </div>
         <div className='App-principal-variante'>
-        <h1 className="titulos">Configuraciones</h1>
+        <h1 className="titulos">Datos y Configuración</h1>
           <div style={{width:"40%", alignItems: "left"}}>
               <form autoComplete="off">
 
                   <h6 className="campos">DNI:</h6>
                     <input
                       type="text"
-                      autoComplete="new-password"
                       className="form-control"
                       style={{margin:"20px"}}
                       id="dni"
-                      placeholder={"42069"}
+                      value={"42069"}
                       disabled
                     />
-
-
+              <div className="row" style={{width:"100%"}}>
+                    <div className="col">
+                    <h6 className="campos">Nombre:</h6>
+                    <input
+                    align="center"
+                      type="text"
+                      className="form-control"
+                      style={{margin:"20px"}}
+                      id="nombre"
+                      value={"Clara"}
+                      disabled
+                    /></div>
+                     <div className="col">
+                     <h6 className="campos">Apellido:</h6>
+                    <input
+                    align="center"
+                      type="text"
+                      className="form-control"
+                      style={{margin:"20px"}}
+                      id="nombre"
+                      value={"Gomez"}
+                      disabled
+                    />
+                    </div>
+                    </div>
+        
                   <h6 className="campos">Email:</h6>
                   <input
                     type="email"
@@ -41,45 +64,25 @@ export default function Configuración(props) {
                     style={{margin:"20px"}}
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
-                    placeholder={"ejem@plo.com"}
+                    value={"ejem@plo.com"}
                     disabled
-                  />
-
-                  <h6 className="campos">Obra social:</h6>
-                  <input
-                    type="text"
-                    className="form-control"
-                    style={{margin:"20px"}}
-                    id="obraSocial"
-                    aria-describedby="emailHelp"
-                    placeholder="Ingrese su obra social"
-                  />
-                  <input
-                    type="number"
-                    className="form-control"
-                    style={{margin:"20px"}}
-                    id="nroos"
-                    aria-describedby="emailHelp"
-                    placeholder="Ingrese su número de Obra Social"
                   />
 
                   <h6 className="campos">Nueva Contraseña:</h6>
                     <input
                       type="password"
-                      autoComplete="new-password"
                       className="form-control"
                       style={{margin:"20px"}}
                       id="exampleInputPassword1"
-                      placeholder="Ingresar Contraseña"
+                      placeholder="Contraseña Actual"
                       required
                     />
                     <input
                       type="password"
-                      autoComplete="new-password"
                       className="form-control"
                       style={{margin:"20px"}}
                       id="exampleInputPassword1"
-                      placeholder="Confirmar Contraseña"
+                      placeholder="Contraseña Nueva"
                       required
                       />
                     
@@ -93,17 +96,3 @@ export default function Configuración(props) {
         </div>
     );
   }
-
-
-        /* <div className="loginbox">
-          <h2>Login</h2>
-          <form autoComplete="off">
-            <p>Correo</p>
-            <input type="text" name="" placeholder="Enter Username"></input>
-            <p>Contrasena</p>
-            <input type="password" name="" placeholder="Enter Password"></input>
-            <input type="submit" name="" value="Login"></input>
-            <a href="#">¿Olvidaste tu contraseña?</a>
-            <a href="#">¿No tiene cuenta?</a>
-          </form>
-        </div> */

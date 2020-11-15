@@ -1,32 +1,19 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Desplegable from './Desplegable.js';
-import InicioRegistro from './InicioRegistro.js'
-import Grid from '@material-ui/core/Grid';
+import InicioRegistro from './InicioRegistro.js';
+import Logo from '../assets/img/consulclaudio.png';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display:"flex",
-    flexDirection: "row",
-    maxWidth: "100%",
-  },
-  derecha:{
-    maxWidth: 'inherit',
-    marginRight:'20px',
-  },
-}));
 export default function HeaderGrid(props) {
-  const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <Grid container>
-        <Grid item xs style={{marginLeft:"10px", fontSize:"50px"}}>
-        ConsulClaudio
-        </Grid>
-        <Grid item xs className={classes.derecha} align='right'>
+    <div >
+      <div className="row align-items-center" style={{width:"100%"}}>
+        <div className="col" align='left'>
+        <img src={Logo} className="App-Logo" alt=''/>
+        </div>
+        <div className="col align-items-center" align='right'>
          {props.sesion ? <Desplegable cambio={props.cambio}/>: <InicioRegistro/>}
-        </Grid>
-      </Grid>
+        </div>
+      </div>
     </div>
   );
 }

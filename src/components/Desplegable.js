@@ -94,10 +94,10 @@ export default function CustomizedMenus(props) {
         <Link to='/consultarHistorial'><Button className="boton" color="secondary">Consultar historial clínico</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-        <Link to='/configuracion'><Button className="boton" color="secondary">Configuración</Button></Link>
+        <Link to='/configuracion'><Button className="boton" color="secondary">Datos y Configuración</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
-        <Link to='/ABMUsuarios'><Button className="boton" color="secondary" onClick={props.cambio}>ABM Usuarios</Button></Link>
+        <Link to='/ABMUsuarios'><Button className="boton" color="secondary">ABM Usuarios</Button></Link>
         </StyledMenuItem>
         <StyledMenuItem>
         <Link to='/'><Button className="boton" color="secondary" onClick={props.cambio}>Cerrar sesión</Button></Link>

@@ -15,7 +15,7 @@ export default function IngresarNovedades (props) {
             </navbar>
             <main className="App-principal-variante">
                 <h1 className="titulos">Ingresar Novedades</h1>
-                <div fixed>
+                <div>
                     <form autoComplete="off">
                     <div>
                         <h7 className="campos">Título:</h7>
@@ -30,7 +30,7 @@ export default function IngresarNovedades (props) {
                     </div>
                     <div>
                         <h7 className="campos">Novedad:</h7>
-                        <textarea style={{width:'100%'}} rows="10" cols="100">
+                        <textarea style={{width:'100%'}} rows="10">
                         </textarea>
                     </div>
                     <div>
