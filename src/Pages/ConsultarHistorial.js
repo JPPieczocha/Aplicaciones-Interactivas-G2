@@ -7,7 +7,6 @@ import Footer from "./../components/Footer"
 
 //Iconos
 import SearchIcon from '@material-ui/icons/Search';
-import Upload from '@material-ui/icons/Publish';
 
 export default function ActualizarHistorial(props) {
     return (

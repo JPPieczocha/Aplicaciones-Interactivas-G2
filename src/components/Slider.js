@@ -3,8 +3,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Carousel} from 'react-responsive-carousel';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Link from '@material-ui/core'
-
 import img1 from './../assets/img/img1.jpg';
 import img2 from './../assets/img/img2.jpg';
 import img3 from './../assets/img/img3.jpg';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {FormControl, InputLabel, Select, MenuItem, FormHelperText, TextField, Button, Grid} from '@material-ui/core'
+import {FormControl, InputLabel, Select, MenuItem, FormHelperText, TextField, Grid} from '@material-ui/core'
 
 export default class ModalGestionTurno extends Component {
 
@@ -10,7 +10,7 @@ export default class ModalGestionTurno extends Component {
             estudio: '',
             fecha: '',
             cargado: false,
-            horario: ''
+            horario: '',
         }
 
         this.handleEstudio = this.handleEstudio.bind(this)
@@ -23,20 +23,20 @@ export default class ModalGestionTurno extends Component {
         this.setState({
             estudio: e.target.value,
             cargado: false,
-            horario: ''
         })
     }
 
     handleFecha(e) {
+        if (e>=Date.now()){
         this.setState({
             fecha: e.target.value,
             cargado: false,
-            horario: ''
         })
+    }
     }
 
     handleCarga(){
-        if (this.state.estudio !== '' && this.state.fecha !== ''){
+        if (this.state.estudio !== '' && this.state.fecha !== '' ){
             this.setState({
                 cargado: true
             })
@@ -47,7 +47,7 @@ export default class ModalGestionTurno extends Component {
         return (
             <div>
                 <form>
-                    <Grid container>
+                    <Grid container className="align-items-center">
                         <Grid item xs={12} sm={4}>
                             <FormControl>
                                 <InputLabel id="demo-simple-select-helper-label">Estudio</InputLabel>
@@ -67,9 +67,10 @@ export default class ModalGestionTurno extends Component {
                             </FormControl>
                         </Grid>
                         <Grid item xs={12} sm={4}>
+                        <FormControl>
                             <TextField
                                 id="datetime-local"
-                                label="Next appointment"
+                                label="Fecha del turno"
                                 type="date"
                                 defaultValue={Date.now()}
                                 onChange={this.handleFecha}
@@ -77,29 +78,15 @@ export default class ModalGestionTurno extends Component {
                                     shrink: true,
                                 }}
                             />
+                            <FormHelperText>Cargue una fecha para realizar su estudio</FormHelperText>
+                        </FormControl>
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Button onClick={this.handleCarga}>Buscar horarios</Button>
+                        <FormControl align="center">
+                            <button color="primary" style={{margin:"4px"}} onClick={this.handleCarga}>Buscar horarios</button>
+                        </FormControl>
                         </Grid>
                     </Grid>
-                    
-
-                    <FormControl disabled={this.state.cargado}>
-                        <InputLabel id="demo-simple-select-helper-label">Estudio</InputLabel>
-                        <Select
-                            labelId="demo-simple-select-helper-label"
-                            id="demo-simple-select-helper"
-                            value={this.state.cargado}
-                            onChange={this.handleEstudio}
-                            fullWidth
-                            >
-                                <MenuItem value=""><em></em></MenuItem>
-                                <MenuItem value="10:30">10:30 A.M.</MenuItem>
-                                <MenuItem value="11:00">11:00 A.M.</MenuItem>
-                                <MenuItem value="11:30">11:30</MenuItem>
-                        </Select>
-                        <FormHelperText>Cargue el estudio que desea realizarse</FormHelperText>
-                    </FormControl>
                 </form>
             </div>
         )

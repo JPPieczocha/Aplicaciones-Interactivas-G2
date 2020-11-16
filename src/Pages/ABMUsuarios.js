@@ -32,7 +32,7 @@ export default function Configuración(props) {
           <div style={{width:"50%"}}>
               <form autoComplete="off">
 
-                    <h7 className="campos">DNI:</h7>
+                    <h7 className="campos">Buscar usuario por DNI:</h7>
                     <div>
                     <input
                     type="text"
